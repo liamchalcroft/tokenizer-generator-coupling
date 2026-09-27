@@ -1,0 +1,43 @@
+{
+  "_description": "D3PM rows of the vocabulary-1024 FID-192 against FID-2048 comparison, both dimensions computed on the same 10K generated samples per cell. The VQ-1024 row uses the main-table samples (results/generated_tokens/chestmnist/VQ1024_d3pm_seed42_n10000.npz) and its FIDs were computed on the CPU.",
+  "meta": {
+    "num_samples": 10000,
+    "dims": [
+      192,
+      2048
+    ],
+    "device": "cuda",
+    "n_real": 22433
+  },
+  "cells": {
+    "LFQ1024_d3pm": {
+      "label": "LFQ-1024 + D3PM",
+      "tokenizer": "LFQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "gen_time_s": 1295.7,
+      "fid192": 0.4225887656211853,
+      "fid2048": 42.375221252441406
+    },
+    "FSQ1024_d3pm": {
+      "label": "FSQ-1024 + D3PM",
+      "tokenizer": "FSQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "gen_time_s": 1320.3,
+      "fid192": 1.1352406740188599,
+      "fid2048": 59.28493881225586
+    },
+    "VQ1024_d3pm": {
+      "label": "VQ-1024 + D3PM",
+      "tokenizer": "VQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "gen_time_s": 34911.2,
+      "fid192": 1.3017884492874146,
+      "fid2048": 114.31266784667969,
+      "fid_device": "cpu",
+      "tokens_file": "results/generated_tokens/chestmnist/VQ1024_d3pm_seed42_n10000.npz"
+    }
+  }
+}

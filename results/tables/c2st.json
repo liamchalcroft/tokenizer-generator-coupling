@@ -1,0 +1,161 @@
+{
+  "_description": "Classifier two-sample test. AUC 0.5 means a discriminator cannot separate generated from real; 1.0 means trivially separable. Offered because unconditional generators make a synth-then-classify utility study ill-posed. Makes no Gaussian assumption and uses no Inception features, so agreement with the FID-192 ordering is independent evidence.",
+  "meta": {
+    "epochs": 4,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "device": "cuda",
+    "samples_dir": "c2st_samples (written by scripts/eval_fid_dual.py --save_samples; not stored)"
+  },
+  "cells": {
+    "AEdisc_continuous_flow": {
+      "auc_mean": 0.5406977872802722,
+      "auc_std": 0.010781448542204388,
+      "auc_per_seed": [
+        0.5398123030606946,
+        0.5303863873535776,
+        0.5518946714265445
+      ],
+      "accuracy_mean": 0.5136666666666666,
+      "n_seeds": 3,
+      "fid192": 0.07234132289886475
+    },
+    "FSQ1024_maskgit": {
+      "auc_mean": 0.9999719983051506,
+      "auc_std": 8.607033237163361e-06,
+      "auc_per_seed": [
+        0.9999811062743174,
+        0.9999708888371357,
+        0.999963999803999
+      ],
+      "accuracy_mean": 0.9981666666666666,
+      "n_seeds": 3,
+      "fid192": 1.1562005281448364
+    },
+    "FSQ1024_transformer": {
+      "auc_mean": 0.9127447462459225,
+      "auc_std": 0.02029834455427023,
+      "auc_per_seed": [
+        0.9212112745307243,
+        0.8895836925932312,
+        0.9274392716138121
+      ],
+      "accuracy_mean": 0.8175555555555555,
+      "n_seeds": 3,
+      "fid192": 0.4145788252353668
+    },
+    "FSQ4096_bayesian_flow": {
+      "auc_mean": 0.9991831841471729,
+      "auc_std": 0.00041823155114222574,
+      "auc_per_seed": [
+        0.9995790033359652,
+        0.9987456644367367,
+        0.9992248846688165
+      ],
+      "accuracy_mean": 0.9858888888888889,
+      "n_seeds": 3,
+      "fid192": 8.433917999267578
+    },
+    "LFQ1024_d3pm": {
+      "auc_mean": 0.926117144144876,
+      "auc_std": 0.003912202848479581,
+      "auc_per_seed": [
+        0.9225257221404235,
+        0.9255397565151227,
+        0.9302859537790816
+      ],
+      "accuracy_mean": 0.8041111111111112,
+      "n_seeds": 3,
+      "fid192": 0.41956374049186707
+    },
+    "LFQ1024_d3pm_tuned": {
+      "auc_mean": 0.7655378004467982,
+      "auc_std": 0.1411238362949222,
+      "auc_per_seed": [
+        0.8106966494533712,
+        0.6073617464208825,
+        0.8785550054661408
+      ],
+      "accuracy_mean": 0.6766666666666667,
+      "n_seeds": 3,
+      "fid192": 0.08670856058597565
+    },
+    "LFQ1024_flow": {
+      "auc_mean": 0.9915470231489989,
+      "auc_std": 0.000868795073509063,
+      "auc_per_seed": [
+        0.9909630198664191,
+        0.9925454311918777,
+        0.9911326183887001
+      ],
+      "accuracy_mean": 0.9485555555555556,
+      "n_seeds": 3,
+      "fid192": 1.730282187461853
+    },
+    "LFQ1024_maskgit": {
+      "auc_mean": 0.9906223983955598,
+      "auc_std": 0.0019001832587334363,
+      "auc_per_seed": [
+        0.9928129378898776,
+        0.9896359815750784,
+        0.9894182757217234
+      ],
+      "accuracy_mean": 0.9374444444444445,
+      "n_seeds": 3,
+      "fid192": 1.942124605178833
+    },
+    "LFQ1024_transformer": {
+      "auc_mean": 0.9419043506159476,
+      "auc_std": 0.019057652525220077,
+      "auc_per_seed": [
+        0.9544860150865289,
+        0.9199779688497224,
+        0.9512490679115919
+      ],
+      "accuracy_mean": 0.8684444444444445,
+      "n_seeds": 3,
+      "fid192": 0.3350074589252472
+    },
+    "VAEc2_diffusion": {
+      "auc_mean": 0.7074284692339182,
+      "auc_std": 0.03182618249409194,
+      "auc_per_seed": [
+        0.74058647902752,
+        0.6771266482251524,
+        0.7045722804490825
+      ],
+      "accuracy_mean": 0.642888888888889,
+      "n_seeds": 3,
+      "fid192": 0.1452326774597168
+    },
+    "VQ1024_maskgit": {
+      "auc_mean": 0.987832191513637,
+      "auc_std": 0.0031061601802493824,
+      "auc_per_seed": [
+        0.9869065369623512,
+        0.9852940849672621,
+        0.9912959526112975
+      ],
+      "accuracy_mean": 0.9463888888888888,
+      "n_seeds": 3,
+      "fid192": 1.8268790245056152
+    },
+    "VQ1024_transformer": {
+      "auc_mean": 0.9278895642734084,
+      "auc_std": 0.007224501638372523,
+      "auc_per_seed": [
+        0.933787160624231,
+        0.9198312463666602,
+        0.9300502858293339
+      ],
+      "accuracy_mean": 0.856,
+      "n_seeds": 3,
+      "fid192": 0.527262270450592
+    }
+  },
+  "spearman_fid192_vs_c2st_auc": 0.8601398601398601,
+  "spearman_n": 12
+}

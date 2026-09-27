@@ -1,0 +1,87 @@
+{
+  "_description": "Real-vs-real FID-192 noise floor (estimator variance) for the cross-dataset replication sets. FID-192 in the cross-dataset table uses 10000 generated samples vs the full test split; this floor splits the test set into two disjoint halves of n_per_half each, B=200 bootstrap reps. Pneumonia's small test set (624) implies a relatively high floor / wide CI, which bounds how finely its cross-dataset FIDs can be ranked.",
+  "generated_samples_per_cell": 10000,
+  "B": 200,
+  "datasets": {
+    "pneumoniamnist": {
+      "n_test": 624,
+      "noise_floor": {
+        "100": {
+          "n_per_half": 100,
+          "B": 200,
+          "mean": 0.14611136462305943,
+          "std": 0.05926399599915783,
+          "p2.5": 0.06038813116631845,
+          "p97.5": 0.2895375086839631,
+          "ci_width_95": 0.22914937751764466,
+          "time_s": 26.52479314804077
+        },
+        "200": {
+          "n_per_half": 200,
+          "B": 200,
+          "mean": 0.07932961673162935,
+          "std": 0.03756826822877989,
+          "p2.5": 0.03328715412565606,
+          "p97.5": 0.16552983854021422,
+          "ci_width_95": 0.13224268441455816,
+          "time_s": 26.85295057296753
+        },
+        "312": {
+          "n_per_half": 312,
+          "B": 200,
+          "mean": 0.053377529068915165,
+          "std": 0.020508366739138716,
+          "p2.5": 0.025433967652151536,
+          "p97.5": 0.10289155499556983,
+          "ci_width_95": 0.07745758734341829,
+          "time_s": 34.586201906204224
+        }
+      }
+    },
+    "organamnist": {
+      "n_test": 17778,
+      "noise_floor": {
+        "1000": {
+          "n_per_half": 1000,
+          "B": 200,
+          "mean": 0.08265855331127325,
+          "std": 0.05114300639325509,
+          "p2.5": 0.02484583232951154,
+          "p97.5": 0.21678365237887026,
+          "ci_width_95": 0.19193782004935872,
+          "time_s": 38.149744272232056
+        },
+        "2500": {
+          "n_per_half": 2500,
+          "B": 200,
+          "mean": 0.02909375786240428,
+          "std": 0.017986445439299677,
+          "p2.5": 0.008928980531499686,
+          "p97.5": 0.07429377715212991,
+          "ci_width_95": 0.06536479662063023,
+          "time_s": 39.958696603775024
+        },
+        "5000": {
+          "n_per_half": 5000,
+          "B": 200,
+          "mean": 0.014494446353867598,
+          "std": 0.009029085352777685,
+          "p2.5": 0.004472470547738983,
+          "p97.5": 0.03836353467004613,
+          "ci_width_95": 0.03389106412230714,
+          "time_s": 49.482304096221924
+        },
+        "8889": {
+          "n_per_half": 8889,
+          "B": 200,
+          "mean": 0.008904048861961921,
+          "std": 0.0057859790912630086,
+          "p2.5": 0.002704690793020248,
+          "p97.5": 0.026948969262546817,
+          "ci_width_95": 0.024244278469526568,
+          "time_s": 48.7856969833374
+        }
+      }
+    }
+  }
+}

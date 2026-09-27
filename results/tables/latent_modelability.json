@@ -1,0 +1,1059 @@
+{
+  "_description": "Generator-free latent statistics per discrete tokenizer, correlated against the best default-config generation FID-192 over the six discrete generators (results/chestmnist_factorial/eval_results.json). Conditional entropies are held-out: bigram counts fitted on train, cross-entropy scored on test. The smoothing constant is selected on the validation split, never on test. PSNR is included as the baseline predictor to beat.",
+  "meta": {
+    "alphas": [
+      1.0,
+      0.01
+    ],
+    "alpha_grid": [
+      10.0,
+      3.0,
+      1.0,
+      0.3,
+      0.1,
+      0.03,
+      0.01,
+      0.003,
+      0.001
+    ],
+    "tokenized_root": "../medtokenizers/checkpoints/medmnist/tokenized",
+    "n_tokenizers": 9
+  },
+  "tokenizers": {
+    "VQ1024": {
+      "vocab": 1024,
+      "dir": "chestmnist_VQ1024",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 28.0,
+      "best_fid": 0.5183,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 9.973197652255031,
+      "marginal_entropy_norm": 0.9973197652255031,
+      "per_pos_entropy_mean": 9.139225735059902,
+      "per_pos_entropy_std": 0.3890215534205118,
+      "per_pos_entropy_min": 8.072874735126796,
+      "per_pos_entropy_max": 9.706339358463076,
+      "per_pos_dispersion_norm": 0.03890215534205118,
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 9.489746243996171,
+      "cond_entropy_left_a1_norm": 0.9489746243996171,
+      "predictive_gain_left_a1": 0.4834514082588601,
+      "cond_entropy_left_a0.01": 9.719554201805261,
+      "cond_entropy_left_a0.01_norm": 0.971955420180526,
+      "predictive_gain_left_a0.01": 0.2536434504497702,
+      "sweep_left": {
+        "10": 0.32747436095770155,
+        "3": 0.4578966782628733,
+        "1": 0.4834514082588601,
+        "0.3": 0.442369728061923,
+        "0.1": 0.3846727031511872,
+        "0.03": 0.3166817113897107,
+        "0.01": 0.2536434504497702,
+        "0.003": 0.18427925011441815,
+        "0.001": 0.12090836839573171
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 9.489746243996171,
+      "cond_entropy_left_valsel_norm": 0.9489746243996171,
+      "predictive_gain_left_valsel": 0.4834514082588601,
+      "cond_entropy_up_a1": 9.269178596343918,
+      "cond_entropy_up_a1_norm": 0.9269178596343919,
+      "predictive_gain_up_a1": 0.7040190559111128,
+      "cond_entropy_up_a0.01": 9.458318758918619,
+      "cond_entropy_up_a0.01_norm": 0.9458318758918619,
+      "predictive_gain_up_a0.01": 0.5148788933364123,
+      "sweep_up": {
+        "10": 0.43743030361066815,
+        "3": 0.6356110692210741,
+        "1": 0.7040190559111128,
+        "0.3": 0.6867448066119568,
+        "0.1": 0.6384706229111146,
+        "0.03": 0.5753036951793025,
+        "0.01": 0.5148788933364123,
+        "0.003": 0.44774848039108406,
+        "0.001": 0.38622846399001887
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 9.269178596343918,
+      "cond_entropy_up_valsel_norm": 0.9269178596343919,
+      "predictive_gain_up_valsel": 0.7040190559111128
+    },
+    "VQ2048": {
+      "vocab": 2048,
+      "dir": "chestmnist_VQ2048",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 29.3,
+      "best_fid": 0.523,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 10.971890014226485,
+      "marginal_entropy_norm": 0.9974445467478623,
+      "per_pos_entropy_mean": 10.310027960732864,
+      "per_pos_entropy_std": 0.2645935382196296,
+      "per_pos_entropy_min": 9.332345223118459,
+      "per_pos_entropy_max": 10.689972340471273,
+      "per_pos_dispersion_norm": 0.024053958019966327,
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 10.710594122756612,
+      "cond_entropy_left_a1_norm": 0.9736903747960557,
+      "predictive_gain_left_a1": 0.26129589146987264,
+      "cond_entropy_left_a0.01": 11.960102001782536,
+      "cond_entropy_left_a0.01_norm": 1.0872820001620487,
+      "predictive_gain_left_a0.01": -0.9882119875560509,
+      "sweep_left": {
+        "10": 0.11447386397424353,
+        "3": 0.224617828282609,
+        "1": 0.26129589146987264,
+        "0.3": 0.11414585795144738,
+        "0.1": -0.17749259122625816,
+        "0.03": -0.5851286902676982,
+        "0.01": -0.9882119875560509,
+        "0.003": -1.4412596319499116,
+        "0.001": -1.8580553774552175
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 10.710594122756612,
+      "cond_entropy_left_valsel_norm": 0.9736903747960557,
+      "predictive_gain_left_valsel": 0.26129589146987264,
+      "cond_entropy_up_a1": 10.61773000976169,
+      "cond_entropy_up_a1_norm": 0.9652481827056082,
+      "predictive_gain_up_a1": 0.354160004464795,
+      "cond_entropy_up_a0.01": 11.708772787222214,
+      "cond_entropy_up_a0.01_norm": 1.064433889747474,
+      "predictive_gain_up_a0.01": -0.7368827729957292,
+      "sweep_up": {
+        "10": 0.13125724103819536,
+        "3": 0.2754205485726704,
+        "1": 0.354160004464795,
+        "0.3": 0.2529426453199921,
+        "0.1": -0.0005030515449035988,
+        "0.03": -0.36878706299046904,
+        "0.01": -0.7368827729957292,
+        "0.003": -1.1519262969258364,
+        "0.001": -1.5341458378219208
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 10.61773000976169,
+      "cond_entropy_up_valsel_norm": 0.9652481827056082,
+      "predictive_gain_up_valsel": 0.354160004464795
+    },
+    "VQ4096": {
+      "vocab": 4096,
+      "dir": "chestmnist_VQ4096",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 29.4,
+      "best_fid": 0.3097,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 11.973885465099666,
+      "marginal_entropy_norm": 0.9978237887583056,
+      "per_pos_entropy_mean": 11.10954593429786,
+      "per_pos_entropy_std": 0.32503822500135693,
+      "per_pos_entropy_min": 9.951982418873731,
+      "per_pos_entropy_max": 11.561072673640634,
+      "per_pos_dispersion_norm": 0.027086518750113076,
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 11.773838177453866,
+      "cond_entropy_left_a1_norm": 0.9811531814544888,
+      "predictive_gain_left_a1": 0.20004728764580015,
+      "cond_entropy_left_a0.01": 13.976515346791658,
+      "cond_entropy_left_a0.01_norm": 1.1647096122326381,
+      "predictive_gain_left_a0.01": -2.002629881691991,
+      "sweep_left": {
+        "10": 0.053129206562021025,
+        "3": 0.1338170783860324,
+        "1": 0.20004728764580015,
+        "0.3": 0.09639192119306905,
+        "0.1": -0.32495858879423345,
+        "0.03": -1.1173769435072405,
+        "0.01": -2.002629881691991,
+        "0.003": -3.0411083203792693,
+        "0.001": -4.0102971259181395
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 11.773838177453866,
+      "cond_entropy_left_valsel_norm": 0.9811531814544888,
+      "predictive_gain_left_valsel": 0.20004728764580015,
+      "cond_entropy_up_a1": 11.69693038968196,
+      "cond_entropy_up_a1_norm": 0.9747441991401633,
+      "predictive_gain_up_a1": 0.2769550754177068,
+      "cond_entropy_up_a0.01": 13.578331081664045,
+      "cond_entropy_up_a0.01_norm": 1.1315275901386703,
+      "predictive_gain_up_a0.01": -1.6044456165643783,
+      "sweep_up": {
+        "10": 0.05945105691530017,
+        "3": 0.1651078742969201,
+        "1": 0.2769550754177068,
+        "0.3": 0.24563745689132865,
+        "0.1": -0.09858254787612886,
+        "0.03": -0.8019343896432005,
+        "0.01": -1.6044456165643783,
+        "0.003": -2.5517058897211093,
+        "0.001": -3.4374942232041406
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 11.69693038968196,
+      "cond_entropy_up_valsel_norm": 0.9747441991401633,
+      "predictive_gain_up_valsel": 0.2769550754177068
+    },
+    "LFQ1024": {
+      "vocab": 1024,
+      "dir": "chestmnist_LFQ1024",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 28.0,
+      "best_fid": 0.33,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 9.994792343458858,
+      "marginal_entropy_norm": 0.9994792343458858,
+      "per_pos_entropy_mean": 9.68675174486767,
+      "per_pos_entropy_std": 0.10205533668311934,
+      "per_pos_entropy_min": 9.372052558856979,
+      "per_pos_entropy_max": 9.861273934616161,
+      "per_pos_dispersion_norm": 0.010205533668311933,
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 9.815589964365602,
+      "cond_entropy_left_a1_norm": 0.9815589964365602,
+      "predictive_gain_left_a1": 0.17920237909325643,
+      "cond_entropy_left_a0.01": 10.039627514055702,
+      "cond_entropy_left_a0.01_norm": 1.0039627514055702,
+      "predictive_gain_left_a0.01": -0.044835170596844165,
+      "sweep_left": {
+        "10": 0.13900976569911094,
+        "3": 0.19320598932118216,
+        "1": 0.17920237909325643,
+        "0.3": 0.12419849352221846,
+        "0.1": 0.06835585291774571,
+        "0.03": 0.008648834013989415,
+        "0.01": -0.044835170596844165,
+        "0.003": -0.10303063191116024,
+        "0.001": -0.1560029992312888
+      },
+      "alpha_selected_left": 3.0,
+      "cond_entropy_left_valsel": 9.801586354137676,
+      "cond_entropy_left_valsel_norm": 0.9801586354137676,
+      "predictive_gain_left_valsel": 0.19320598932118216,
+      "cond_entropy_up_a1": 9.84756981630281,
+      "cond_entropy_up_a1_norm": 0.984756981630281,
+      "predictive_gain_up_a1": 0.1472225271560479,
+      "cond_entropy_up_a0.01": 10.07195806710455,
+      "cond_entropy_up_a0.01_norm": 1.007195806710455,
+      "predictive_gain_up_a0.01": -0.07716572364569174,
+      "sweep_up": {
+        "10": 0.1230184899641884,
+        "3": 0.16724693813779545,
+        "1": 0.1472225271560479,
+        "0.3": 0.08980426872291147,
+        "0.1": 0.033945343751618395,
+        "0.03": -0.024832394313296646,
+        "0.01": -0.07716572364569174,
+        "0.003": -0.13399418174514288,
+        "0.001": -0.18568772634923114
+      },
+      "alpha_selected_up": 3.0,
+      "cond_entropy_up_valsel": 9.827545405321063,
+      "cond_entropy_up_valsel_norm": 0.9827545405321063,
+      "predictive_gain_up_valsel": 0.16724693813779545
+    },
+    "LFQ2048": {
+      "vocab": 2048,
+      "dir": "chestmnist_LFQ2048",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 28.1,
+      "best_fid": 0.4498,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 10.992055768771788,
+      "marginal_entropy_norm": 0.9992777971610717,
+      "per_pos_entropy_mean": 10.610554650877534,
+      "per_pos_entropy_std": 0.12405273357547873,
+      "per_pos_entropy_min": 10.221489884973696,
+      "per_pos_entropy_max": 10.821505759527504,
+      "per_pos_dispersion_norm": 0.011277521234134431,
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 10.893724476688146,
+      "cond_entropy_left_a1_norm": 0.9903385887898314,
+      "predictive_gain_left_a1": 0.09833129208364255,
+      "cond_entropy_left_a0.01": 12.311363666703139,
+      "cond_entropy_left_a0.01_norm": 1.1192148787911944,
+      "predictive_gain_left_a0.01": -1.3193078979313508,
+      "sweep_left": {
+        "10": 0.05778927120351263,
+        "3": 0.11352595142074762,
+        "1": 0.09833129208364255,
+        "0.3": -0.09991239674296892,
+        "0.1": -0.43234586032804145,
+        "0.03": -0.880683848490321,
+        "0.01": -1.3193078979313508,
+        "0.003": -1.8106931551404646,
+        "0.001": -2.2622848446574046
+      },
+      "alpha_selected_left": 3.0,
+      "cond_entropy_left_valsel": 10.87852981735104,
+      "cond_entropy_left_valsel_norm": 0.9889572561228218,
+      "predictive_gain_left_valsel": 0.11352595142074762,
+      "cond_entropy_up_a1": 10.854343637949244,
+      "cond_entropy_up_a1_norm": 0.9867585125408403,
+      "predictive_gain_up_a1": 0.1377121308225444,
+      "cond_entropy_up_a0.01": 12.211546056111029,
+      "cond_entropy_up_a0.01_norm": 1.1101405505555482,
+      "predictive_gain_up_a0.01": -1.2194902873392408,
+      "sweep_up": {
+        "10": 0.06815082062595579,
+        "3": 0.13699006736205632,
+        "1": 0.1377121308225444,
+        "0.3": -0.043095654487286694,
+        "0.1": -0.3609736779050685,
+        "0.03": -0.7942665419240615,
+        "0.01": -1.2194902873392408,
+        "0.003": -1.696309785662967,
+        "0.001": -2.134646323578849
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 10.854343637949244,
+      "cond_entropy_up_valsel_norm": 0.9867585125408403,
+      "predictive_gain_up_valsel": 0.1377121308225444
+    },
+    "LFQ4096": {
+      "vocab": 4096,
+      "dir": "chestmnist_LFQ",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 28.6,
+      "best_fid": 0.4095,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 11.98244962149382,
+      "marginal_entropy_norm": 0.9985374684578184,
+      "per_pos_entropy_mean": 11.513838008706458,
+      "per_pos_entropy_std": 0.14396873623131226,
+      "per_pos_entropy_min": 11.030113037029462,
+      "per_pos_entropy_max": 11.713035226454515,
+      "per_pos_dispersion_norm": 0.011997394685942688,
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 11.915536653486331,
+      "cond_entropy_left_a1_norm": 0.9929613877905276,
+      "predictive_gain_left_a1": 0.06691296800748958,
+      "cond_entropy_left_a0.01": 14.346272914621899,
+      "cond_entropy_left_a0.01_norm": 1.1955227428851583,
+      "predictive_gain_left_a0.01": -2.3638232931280783,
+      "sweep_left": {
+        "10": 0.010920690710436887,
+        "3": 0.04902644716465865,
+        "1": 0.06691296800748958,
+        "0.3": -0.09312758709426561,
+        "0.1": -0.5682801041381484,
+        "0.03": -1.4219963195017282,
+        "0.01": -2.3638232931280783,
+        "0.003": -3.4643692253890013,
+        "0.001": -4.490186037555535
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 11.915536653486331,
+      "cond_entropy_left_valsel_norm": 0.9929613877905276,
+      "predictive_gain_left_valsel": 0.06691296800748958,
+      "cond_entropy_up_a1": 11.923562689385163,
+      "cond_entropy_up_a1_norm": 0.9936302241154302,
+      "predictive_gain_up_a1": 0.05888693210865803,
+      "cond_entropy_up_a0.01": 14.380632869275798,
+      "cond_entropy_up_a0.01_norm": 1.1983860724396498,
+      "predictive_gain_up_a0.01": -2.3981832477819776,
+      "sweep_up": {
+        "10": 0.009240426687940229,
+        "3": 0.044905731553667394,
+        "1": 0.05888693210865803,
+        "0.3": -0.10726690193999922,
+        "0.1": -0.588903511657298,
+        "0.03": -1.4498193388391094,
+        "0.01": -2.3981832477819776,
+        "0.003": -3.5059043238144856,
+        "0.001": -4.538278934450787
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 11.923562689385163,
+      "cond_entropy_up_valsel_norm": 0.9936302241154302,
+      "predictive_gain_up_valsel": 0.05888693210865803
+    },
+    "FSQ1024": {
+      "vocab": 1024,
+      "dir": "chestmnist_FSQ1024",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 29.4,
+      "best_fid": 0.3851,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 9.591093241354915,
+      "marginal_entropy_norm": 0.9591093241354915,
+      "per_pos_entropy_mean": 9.07921478931247,
+      "per_pos_entropy_std": 0.2852910021327198,
+      "per_pos_entropy_min": 8.146829304689305,
+      "per_pos_entropy_max": 9.441743738195965,
+      "per_pos_dispersion_norm": 0.028529100213271978,
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 9.393002543182662,
+      "cond_entropy_left_a1_norm": 0.9393002543182662,
+      "predictive_gain_left_a1": 0.198090698172253,
+      "cond_entropy_left_a0.01": 9.63413389769283,
+      "cond_entropy_left_a0.01_norm": 0.963413389769283,
+      "predictive_gain_left_a0.01": -0.043040656337915095,
+      "sweep_left": {
+        "10": 0.04708784043539005,
+        "3": 0.17073257711922807,
+        "1": 0.198090698172253,
+        "0.3": 0.16139195114523908,
+        "0.1": 0.10200875526999731,
+        "0.03": 0.027606813763998872,
+        "0.01": -0.043040656337915095,
+        "0.003": -0.12140120719771552,
+        "0.001": -0.19318020138024927
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 9.393002543182662,
+      "cond_entropy_left_valsel_norm": 0.9393002543182662,
+      "predictive_gain_left_valsel": 0.198090698172253,
+      "cond_entropy_up_a1": 9.325616348123873,
+      "cond_entropy_up_a1_norm": 0.9325616348123873,
+      "predictive_gain_up_a1": 0.2654768932310425,
+      "cond_entropy_up_a0.01": 9.566938878868788,
+      "cond_entropy_up_a0.01_norm": 0.9566938878868788,
+      "predictive_gain_up_a0.01": 0.024154362486127567,
+      "sweep_up": {
+        "10": 0.10199006848164593,
+        "3": 0.2348728745084525,
+        "1": 0.2654768932310425,
+        "0.3": 0.22973788460908473,
+        "0.1": 0.17028055154400867,
+        "0.03": 0.09538834306585997,
+        "0.01": 0.024154362486127567,
+        "0.003": -0.05489947667969197,
+        "0.001": -0.1273262865763094
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 9.325616348123873,
+      "cond_entropy_up_valsel_norm": 0.9325616348123873,
+      "predictive_gain_up_valsel": 0.2654768932310425
+    },
+    "FSQ2048": {
+      "vocab": 2048,
+      "dir": "chestmnist_FSQ2048",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 29.6,
+      "best_fid": 0.728,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 10.693720759150732,
+      "marginal_entropy_norm": 0.9721564326500666,
+      "per_pos_entropy_mean": 10.129933617247428,
+      "per_pos_entropy_std": 0.28915047768719615,
+      "per_pos_entropy_min": 9.452119587269053,
+      "per_pos_entropy_max": 10.519617210912884,
+      "per_pos_dispersion_norm": 0.026286407062472376,
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 10.643142257626733,
+      "cond_entropy_left_a1_norm": 0.9675583870569757,
+      "predictive_gain_left_a1": 0.05057850152399901,
+      "cond_entropy_left_a0.01": 11.682760052881276,
+      "cond_entropy_left_a0.01_norm": 1.0620690957164796,
+      "predictive_gain_left_a0.01": -0.9890392937305439,
+      "sweep_left": {
+        "10": -0.12257211170276605,
+        "3": 0.0037283091405608815,
+        "1": 0.05057850152399901,
+        "0.3": -0.061711483856909055,
+        "0.1": -0.3002540379147245,
+        "0.03": -0.6440084860763129,
+        "0.01": -0.9890392937305439,
+        "0.003": -1.3790428806747208,
+        "0.001": -1.7385427916038125
+      },
+      "alpha_selected_left": 1.0,
+      "cond_entropy_left_valsel": 10.643142257626733,
+      "cond_entropy_left_valsel_norm": 0.9675583870569757,
+      "predictive_gain_left_valsel": 0.05057850152399901,
+      "cond_entropy_up_a1": 10.529809130389223,
+      "cond_entropy_up_a1_norm": 0.9572553754899293,
+      "predictive_gain_up_a1": 0.16391162876150922,
+      "cond_entropy_up_a0.01": 11.498442161814696,
+      "cond_entropy_up_a0.01_norm": 1.045312923801336,
+      "predictive_gain_up_a0.01": -0.8047214026639633,
+      "sweep_up": {
+        "10": -0.07827578151482761,
+        "3": 0.08428363991997045,
+        "1": 0.16391162876150922,
+        "0.3": 0.07801202529382145,
+        "0.1": -0.143753572087018,
+        "0.03": -0.4724549944114056,
+        "0.01": -0.8047214026639633,
+        "0.003": -1.181046538734165,
+        "0.001": -1.528152892595573
+      },
+      "alpha_selected_up": 1.0,
+      "cond_entropy_up_valsel": 10.529809130389223,
+      "cond_entropy_up_valsel_norm": 0.9572553754899293,
+      "predictive_gain_up_valsel": 0.16391162876150922
+    },
+    "FSQ4096": {
+      "vocab": 4096,
+      "dir": "chestmnist_FSQ4096",
+      "n_train": 78468,
+      "n_test": 22433,
+      "n_val": 11219,
+      "grid": [
+        8,
+        8
+      ],
+      "psnr": 29.7,
+      "best_fid": 0.37,
+      "best_gen": "AR",
+      "marginal_entropy_bits": 11.36743614829781,
+      "marginal_entropy_norm": 0.9472863456914841,
+      "per_pos_entropy_mean": 10.57406254772221,
+      "per_pos_entropy_std": 0.347277466573083,
+      "per_pos_entropy_min": 9.586698590298909,
+      "per_pos_entropy_max": 11.178190072155072,
+      "per_pos_dispersion_norm": 0.02893978888109025,
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "cond_entropy_left_a1": 11.45151597402996,
+      "cond_entropy_left_a1_norm": 0.95429299783583,
+      "predictive_gain_left_a1": -0.08407982573215023,
+      "cond_entropy_left_a0.01": 12.855912274212344,
+      "cond_entropy_left_a0.01_norm": 1.0713260228510286,
+      "predictive_gain_left_a0.01": -1.4884761259145343,
+      "sweep_left": {
+        "10": -0.4112156519015677,
+        "3": -0.23404984234745108,
+        "1": -0.08407982573215023,
+        "0.3": -0.08497201916606478,
+        "0.1": -0.34097948055334903,
+        "0.03": -0.8718009614795381,
+        "0.01": -1.4884761259145343,
+        "0.003": -2.2256569583010606,
+        "0.001": -2.9189113903378505
+      },
+      "alpha_selected_left": 0.3,
+      "cond_entropy_left_valsel": 11.452408167463874,
+      "cond_entropy_left_valsel_norm": 0.9543673472886561,
+      "predictive_gain_left_valsel": -0.08497201916606478,
+      "cond_entropy_up_a1": 11.38328571664576,
+      "cond_entropy_up_a1_norm": 0.9486071430538133,
+      "predictive_gain_up_a1": -0.01584956834795115,
+      "cond_entropy_up_a0.01": 12.70526317232765,
+      "cond_entropy_up_a0.01_norm": 1.058771931027304,
+      "predictive_gain_up_a0.01": -1.3378270240298402,
+      "sweep_up": {
+        "10": -0.38198702590484857,
+        "3": -0.18578021571095604,
+        "1": -0.01584956834795115,
+        "0.3": 0.00579347198570801,
+        "0.1": -0.23020243177660582,
+        "0.03": -0.7399436079466959,
+        "0.01": -1.3378270240298402,
+        "0.003": -2.0545623901204255,
+        "0.001": -2.729187662929842
+      },
+      "alpha_selected_up": 0.3,
+      "cond_entropy_up_valsel": 11.361642676312101,
+      "cond_entropy_up_valsel_norm": 0.9468035563593418,
+      "predictive_gain_up_valsel": 0.00579347198570801
+    }
+  },
+  "predictors": {
+    "psnr": {
+      "spearman_vs_best_fid": -0.033614632272640714,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.6111111111111112,
+      "n": 9
+    },
+    "marginal_entropy_norm": {
+      "spearman_vs_best_fid": -0.19999999999999998,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.5,
+      "n": 9
+    },
+    "per_pos_dispersion_norm": {
+      "spearman_vs_best_fid": 0.033333333333333326,
+      "within_vocab_exact_orderings": "2/3",
+      "vq_vs_rest_auc": 0.7222222222222222,
+      "n": 9
+    },
+    "cond_entropy_left_a1_norm": {
+      "spearman_vs_best_fid": -0.15,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.3888888888888889,
+      "n": 9
+    },
+    "predictive_gain_left_a1": {
+      "spearman_vs_best_fid": 0.049999999999999996,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 1.0,
+      "n": 9
+    },
+    "cond_entropy_left_a0.01_norm": {
+      "spearman_vs_best_fid": -0.11666666666666665,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.5555555555555556,
+      "n": 9
+    },
+    "predictive_gain_left_a0.01": {
+      "spearman_vs_best_fid": 0.2833333333333333,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 0.6111111111111112,
+      "n": 9
+    },
+    "cond_entropy_left_valsel_norm": {
+      "spearman_vs_best_fid": -0.16666666666666666,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.4444444444444444,
+      "n": 9
+    },
+    "predictive_gain_left_valsel": {
+      "spearman_vs_best_fid": 0.049999999999999996,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 1.0,
+      "n": 9
+    },
+    "cond_entropy_up_a1_norm": {
+      "spearman_vs_best_fid": -0.19999999999999998,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.3333333333333333,
+      "n": 9
+    },
+    "predictive_gain_up_a1": {
+      "spearman_vs_best_fid": 0.2833333333333333,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 1.0,
+      "n": 9
+    },
+    "cond_entropy_up_a0.01_norm": {
+      "spearman_vs_best_fid": -0.16666666666666666,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.5,
+      "n": 9
+    },
+    "predictive_gain_up_a0.01": {
+      "spearman_vs_best_fid": 0.2833333333333333,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 0.6111111111111112,
+      "n": 9
+    },
+    "cond_entropy_up_valsel_norm": {
+      "spearman_vs_best_fid": -0.19999999999999998,
+      "within_vocab_exact_orderings": "0/3",
+      "vq_vs_rest_auc": 0.3333333333333333,
+      "n": 9
+    },
+    "predictive_gain_up_valsel": {
+      "spearman_vs_best_fid": 0.16666666666666666,
+      "within_vocab_exact_orderings": "1/3",
+      "vq_vs_rest_auc": 1.0,
+      "n": 9
+    }
+  },
+  "within_vocab_orderings": {
+    "1024": {
+      "by_best_fid": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_psnr_desc": [
+        "FSQ1024",
+        "VQ1024",
+        "LFQ1024"
+      ],
+      "by_marginal_entropy_norm": [
+        "FSQ1024",
+        "VQ1024",
+        "LFQ1024"
+      ],
+      "by_per_pos_dispersion_norm": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_left_a1_norm": [
+        "FSQ1024",
+        "VQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_left_a1": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_left_a0.01_norm": [
+        "FSQ1024",
+        "VQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_left_a0.01": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_left_valsel_norm": [
+        "FSQ1024",
+        "VQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_left_valsel": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_up_a1_norm": [
+        "VQ1024",
+        "FSQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_up_a1": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_up_a0.01_norm": [
+        "VQ1024",
+        "FSQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_up_a0.01": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ],
+      "by_cond_entropy_up_valsel_norm": [
+        "VQ1024",
+        "FSQ1024",
+        "LFQ1024"
+      ],
+      "by_predictive_gain_up_valsel": [
+        "LFQ1024",
+        "FSQ1024",
+        "VQ1024"
+      ]
+    },
+    "2048": {
+      "by_best_fid": [
+        "LFQ2048",
+        "VQ2048",
+        "FSQ2048"
+      ],
+      "by_psnr_desc": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_marginal_entropy_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_per_pos_dispersion_norm": [
+        "LFQ2048",
+        "VQ2048",
+        "FSQ2048"
+      ],
+      "by_cond_entropy_left_a1_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_left_a1": [
+        "FSQ2048",
+        "LFQ2048",
+        "VQ2048"
+      ],
+      "by_cond_entropy_left_a0.01_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_left_a0.01": [
+        "LFQ2048",
+        "FSQ2048",
+        "VQ2048"
+      ],
+      "by_cond_entropy_left_valsel_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_left_valsel": [
+        "FSQ2048",
+        "LFQ2048",
+        "VQ2048"
+      ],
+      "by_cond_entropy_up_a1_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_up_a1": [
+        "LFQ2048",
+        "FSQ2048",
+        "VQ2048"
+      ],
+      "by_cond_entropy_up_a0.01_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_up_a0.01": [
+        "LFQ2048",
+        "FSQ2048",
+        "VQ2048"
+      ],
+      "by_cond_entropy_up_valsel_norm": [
+        "FSQ2048",
+        "VQ2048",
+        "LFQ2048"
+      ],
+      "by_predictive_gain_up_valsel": [
+        "LFQ2048",
+        "FSQ2048",
+        "VQ2048"
+      ]
+    },
+    "4096": {
+      "by_best_fid": [
+        "VQ4096",
+        "FSQ4096",
+        "LFQ4096"
+      ],
+      "by_psnr_desc": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_marginal_entropy_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_per_pos_dispersion_norm": [
+        "LFQ4096",
+        "VQ4096",
+        "FSQ4096"
+      ],
+      "by_cond_entropy_left_a1_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_left_a1": [
+        "FSQ4096",
+        "LFQ4096",
+        "VQ4096"
+      ],
+      "by_cond_entropy_left_a0.01_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_left_a0.01": [
+        "LFQ4096",
+        "VQ4096",
+        "FSQ4096"
+      ],
+      "by_cond_entropy_left_valsel_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_left_valsel": [
+        "FSQ4096",
+        "LFQ4096",
+        "VQ4096"
+      ],
+      "by_cond_entropy_up_a1_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_up_a1": [
+        "FSQ4096",
+        "LFQ4096",
+        "VQ4096"
+      ],
+      "by_cond_entropy_up_a0.01_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_up_a0.01": [
+        "LFQ4096",
+        "VQ4096",
+        "FSQ4096"
+      ],
+      "by_cond_entropy_up_valsel_norm": [
+        "FSQ4096",
+        "VQ4096",
+        "LFQ4096"
+      ],
+      "by_predictive_gain_up_valsel": [
+        "FSQ4096",
+        "LFQ4096",
+        "VQ4096"
+      ]
+    }
+  },
+  "alpha_stability": {
+    "left": {
+      "per_alpha": {
+        "10": {
+          "spearman_vs_best_fid": 0.049999999999999996,
+          "within_vocab_exact_orderings": "0/3",
+          "vq_vs_rest_auc": 0.8333333333333334
+        },
+        "3": {
+          "spearman_vs_best_fid": 0.08333333333333333,
+          "within_vocab_exact_orderings": "0/3",
+          "vq_vs_rest_auc": 0.8888888888888888
+        },
+        "1": {
+          "spearman_vs_best_fid": 0.049999999999999996,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 1.0
+        },
+        "0.3": {
+          "spearman_vs_best_fid": -0.033333333333333326,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.7777777777777778
+        },
+        "0.1": {
+          "spearman_vs_best_fid": 0.11666666666666665,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.7222222222222222
+        },
+        "0.03": {
+          "spearman_vs_best_fid": 0.2333333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.6111111111111112
+        },
+        "0.01": {
+          "spearman_vs_best_fid": 0.2833333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.6111111111111112
+        },
+        "0.003": {
+          "spearman_vs_best_fid": 0.2666666666666666,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.5555555555555556
+        },
+        "0.001": {
+          "spearman_vs_best_fid": 0.2666666666666666,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.5555555555555556
+        }
+      },
+      "n_alphas": 9,
+      "n_alphas_with_full_ordering": 0,
+      "fraction_full_ordering": 0.0,
+      "n_alphas_with_perfect_vq_separation": 1,
+      "fraction_perfect_vq_separation": 0.1111111111111111
+    },
+    "up": {
+      "per_alpha": {
+        "10": {
+          "spearman_vs_best_fid": 0.16666666666666666,
+          "within_vocab_exact_orderings": "0/3",
+          "vq_vs_rest_auc": 0.8333333333333334
+        },
+        "3": {
+          "spearman_vs_best_fid": 0.18333333333333332,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.8888888888888888
+        },
+        "1": {
+          "spearman_vs_best_fid": 0.2833333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 1.0
+        },
+        "0.3": {
+          "spearman_vs_best_fid": 0.08333333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 1.0
+        },
+        "0.1": {
+          "spearman_vs_best_fid": -0.016666666666666663,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.7777777777777778
+        },
+        "0.03": {
+          "spearman_vs_best_fid": 0.2333333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.6111111111111112
+        },
+        "0.01": {
+          "spearman_vs_best_fid": 0.2833333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.6111111111111112
+        },
+        "0.003": {
+          "spearman_vs_best_fid": 0.2833333333333333,
+          "within_vocab_exact_orderings": "1/3",
+          "vq_vs_rest_auc": 0.6111111111111112
+        },
+        "0.001": {
+          "spearman_vs_best_fid": 0.3,
+          "within_vocab_exact_orderings": "2/3",
+          "vq_vs_rest_auc": 0.5555555555555556
+        }
+      },
+      "n_alphas": 9,
+      "n_alphas_with_full_ordering": 0,
+      "fraction_full_ordering": 0.0,
+      "n_alphas_with_perfect_vq_separation": 2,
+      "fraction_perfect_vq_separation": 0.2222222222222222
+    }
+  }
+}

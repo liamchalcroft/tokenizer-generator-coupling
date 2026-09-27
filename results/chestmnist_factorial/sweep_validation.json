@@ -1,0 +1,98 @@
+{
+  "chestmnist_LFQ1024_d3pm|{\"num_timesteps\": 100, \"temperature\": 0.7}": {
+    "fid": 0.08853472769260406,
+    "is_mean": 2.651442289352417,
+    "is_std": 0.041697174310684204,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 100
+    },
+    "run": "chestmnist_LFQ1024_d3pm",
+    "time_s": 451.81685161590576,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_d3pm|{\"num_timesteps\": 250, \"temperature\": 0.7}": {
+    "fid": 0.09644067287445068,
+    "is_mean": 2.6689836978912354,
+    "is_std": 0.061669494956731796,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 250
+    },
+    "run": "chestmnist_LFQ1024_d3pm",
+    "time_s": 1122.4994595050812,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_d3pm|{\"num_timesteps\": 500, \"temperature\": 0.7}": {
+    "fid": 0.11199381947517395,
+    "is_mean": 2.736640214920044,
+    "is_std": 0.04195581004023552,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 500
+    },
+    "run": "chestmnist_LFQ1024_d3pm",
+    "time_s": 2007.272376537323,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_d3pm|{\"num_timesteps\": 1000, \"temperature\": 0.7}": {
+    "fid": 0.27645769715309143,
+    "is_mean": 2.761768102645874,
+    "is_std": 0.033952146768569946,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 1000
+    },
+    "run": "chestmnist_LFQ1024_d3pm",
+    "time_s": 3936.1662786006927,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_sedd|{\"num_timesteps\": 100, \"temperature\": 0.7}": {
+    "fid": 0.133024200797081,
+    "is_mean": 2.636437177658081,
+    "is_std": 0.036808643490076065,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 100
+    },
+    "run": "chestmnist_LFQ1024_sedd",
+    "time_s": 466.8108379840851,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_sedd|{\"num_timesteps\": 250, \"temperature\": 0.7}": {
+    "fid": 0.11457404494285583,
+    "is_mean": 2.6395442485809326,
+    "is_std": 0.04044020548462868,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 250
+    },
+    "run": "chestmnist_LFQ1024_sedd",
+    "time_s": 1055.1465430259705,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_sedd|{\"num_timesteps\": 500, \"temperature\": 0.7}": {
+    "fid": 0.11065398156642914,
+    "is_mean": 2.7136406898498535,
+    "is_std": 0.05530611425638199,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 500
+    },
+    "run": "chestmnist_LFQ1024_sedd",
+    "time_s": 2064.2257719039917,
+    "num_samples": 10000
+  },
+  "chestmnist_LFQ1024_sedd|{\"num_timesteps\": 1000, \"temperature\": 0.7}": {
+    "fid": 0.2613183856010437,
+    "is_mean": 2.7957818508148193,
+    "is_std": 0.03437688201665878,
+    "hp": {
+      "temperature": 0.7,
+      "num_timesteps": 1000
+    },
+    "run": "chestmnist_LFQ1024_sedd",
+    "time_s": 4027.4625556468964,
+    "num_samples": 10000
+  }
+}

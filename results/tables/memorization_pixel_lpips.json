@@ -1,0 +1,75 @@
+{
+  "_description": "Pixel-L2 and LPIPS(alex) gen->train NN vs test->train baseline. N=1000 per cell, LPIPS via top-50 pixel-candidate rerank. R=median(gen->train)/median(test->train); R<1 or near-zero min would indicate memorization.",
+  "cells": {
+    "chestmnist_AEdisc_continuous_flow": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 5.839351177215576,
+      "pixel_min_gen_train": 2.5763607025146484,
+      "lpips_med_gen_train": 0.06974825263023376,
+      "lpips_min_gen_train": 0.03266406059265137,
+      "R_pixel": 0.9671048521995544,
+      "R_lpips": 0.9945344924926758
+    },
+    "chestmnist_AEdisc_diffusion": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 5.273802280426025,
+      "pixel_min_gen_train": 2.1868581771850586,
+      "lpips_med_gen_train": 0.057573072612285614,
+      "lpips_min_gen_train": 0.02808179333806038,
+      "R_pixel": 0.8734394907951355,
+      "R_lpips": 0.8209296464920044
+    },
+    "chestmnist_VAEc8_continuous_flow": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 5.753798961639404,
+      "pixel_min_gen_train": 2.399353504180908,
+      "lpips_med_gen_train": 0.07214304059743881,
+      "lpips_min_gen_train": 0.03352610021829605,
+      "R_pixel": 0.9529358148574829,
+      "R_lpips": 1.0286816358566284
+    },
+    "chestmnist_LFQ1024_transformer": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 6.7380900382995605,
+      "pixel_min_gen_train": 3.3683745861053467,
+      "lpips_med_gen_train": 0.09043348580598831,
+      "lpips_min_gen_train": 0.042774174362421036,
+      "R_pixel": 1.115952730178833,
+      "R_lpips": 1.2894835472106934
+    },
+    "chestmnist_LFQ1024_d3pm": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 6.533511161804199,
+      "pixel_min_gen_train": 3.103785514831543,
+      "lpips_med_gen_train": 0.0860501229763031,
+      "lpips_min_gen_train": 0.03897600620985031,
+      "R_pixel": 1.0820705890655518,
+      "R_lpips": 1.226981520652771
+    },
+    "chestmnist_VQ1024_maskgit": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 7.339884281158447,
+      "pixel_min_gen_train": 4.431857109069824,
+      "lpips_med_gen_train": 0.17070910334587097,
+      "lpips_min_gen_train": 0.08191654831171036,
+      "R_pixel": 1.215620994567871,
+      "R_lpips": 2.434126853942871
+    },
+    "chestmnist_FSQ4096_bayesian_flow": {
+      "n_gen": 1000,
+      "pixel_med_gen_train": 7.923415660858154,
+      "pixel_min_gen_train": 5.516133785247803,
+      "lpips_med_gen_train": 0.26682165265083313,
+      "lpips_min_gen_train": 0.13928835093975067,
+      "R_pixel": 1.3122645616531372,
+      "R_lpips": 3.8045876026153564
+    }
+  },
+  "baseline_real_test": {
+    "n": 1000,
+    "pixel_med": 6.037971019744873,
+    "pixel_min": 2.355828285217285,
+    "lpips_med": 0.07013155519962311,
+    "lpips_min": 0.03193407133221626
+  }
+}

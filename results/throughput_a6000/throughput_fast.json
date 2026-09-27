@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "device": "cuda",
+    "device_name": "NVIDIA RTX A6000",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "tf32_matmul": true,
+    "float32_matmul_precision": "high",
+    "medlatents": "0.1.0",
+    "medtokenizers": "0.1.0",
+    "script_sha256": "b1e46fc90b24829f885c5e34096166231b338f0e9a3d6983e383d3cc66377bde",
+    "python": "3.10.12",
+    "timestamp_utc": "2026-09-25T11:04:25+00:00",
+    "num_samples": 10000,
+    "repeats": 3,
+    "seed": 42,
+    "steps_override": null,
+    "smoke": false,
+    "weights": "random init (sampling cost is weight-independent)"
+  },
+  "generators": {
+    "ar": {
+      "model_type": "transformer",
+      "steps": 64,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 38.88,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        67.591860255,
+        65.752594112,
+        67.02783562299999
+      ],
+      "gen_seconds_median": 67.02783562299999,
+      "gen_seconds_min": 65.752594112,
+      "samples_per_s_median": 149.19174857808764,
+      "samples_per_s_max": 152.08525435462596,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        2.265580464999971,
+        1.4605354790000433,
+        1.4605276990000107
+      ],
+      "decode_seconds_median": 1.4605354790000433,
+      "decode_seconds_min": 1.4605276990000107,
+      "end_to_end_samples_per_s_median": 146.01018886997556
+    },
+    "maskgit": {
+      "model_type": "maskgit",
+      "steps": 12,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 38.88,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        28.417092330000003,
+        28.552879423000036,
+        28.655718951999972
+      ],
+      "gen_seconds_median": 28.552879423000036,
+      "gen_seconds_min": 28.417092330000003,
+      "samples_per_s_median": 350.22737468448656,
+      "samples_per_s_max": 351.90088710951517,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.5058264209999948,
+        1.4272982730000194,
+        1.4634099250000645
+      ],
+      "decode_seconds_median": 1.4634099250000645,
+      "decode_seconds_min": 1.4272982730000194,
+      "end_to_end_samples_per_s_median": 333.15243879957706
+    },
+    "dfm": {
+      "model_type": "flow",
+      "steps": 100,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        269.81472170200004,
+        268.98193282600005,
+        268.8776384119999
+      ],
+      "gen_seconds_median": 268.98193282600005,
+      "gen_seconds_min": 268.8776384119999,
+      "samples_per_s_median": 37.17721816828803,
+      "samples_per_s_max": 37.191638765723795,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.482437503999904,
+        1.4703250960001242,
+        1.4663931579998462
+      ],
+      "decode_seconds_median": 1.4703250960001242,
+      "decode_seconds_min": 1.4663931579998462,
+      "end_to_end_samples_per_s_median": 36.97510265521263
+    },
+    "d3pm_tuned": {
+      "model_type": "d3pm",
+      "steps": 100,
+      "temperature": 0.7,
+      "batch_size": 64,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "sweep_sampling_hps.generate_with_hps",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        299.3659351489998,
+        313.9434994149999,
+        292.25721933599993
+      ],
+      "gen_seconds_median": 299.3659351489998,
+      "gen_seconds_min": 292.25721933599993,
+      "samples_per_s_median": 33.4039342018751,
+      "samples_per_s_max": 34.21643449123246,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.4698508310000307,
+        1.4674533429999883,
+        1.4653193419999297
+      ],
+      "decode_seconds_median": 1.4674533429999883,
+      "decode_seconds_min": 1.4653193419999297,
+      "end_to_end_samples_per_s_median": 33.240991135084506
+    },
+    "sedd_tuned": {
+      "model_type": "sedd",
+      "steps": 500,
+      "temperature": 0.7,
+      "batch_size": 64,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "sweep_sampling_hps.generate_with_hps",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        1475.1177177069999,
+        1551.5268358999997,
+        1513.0765234159999
+      ],
+      "gen_seconds_median": 1513.0765234159999,
+      "gen_seconds_min": 1475.1177177069999,
+      "samples_per_s_median": 6.609051059376351,
+      "samples_per_s_max": 6.779119984772824,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.4806351209999775,
+        1.4922993339996538,
+        1.5008739220002099
+      ],
+      "decode_seconds_median": 1.4922993339996538,
+      "decode_seconds_min": 1.4806351209999775,
+      "end_to_end_samples_per_s_median": 6.602539184612965
+    },
+    "rf": {
+      "model_type": "continuous_flow",
+      "steps": 100,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_continuous_samples",
+      "params_M": 57.12,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": [
+        4,
+        8,
+        8
+      ],
+      "num_samples": 10000,
+      "gen_seconds": [
+        263.8874031810001,
+        263.86398714499956,
+        263.75152629900003
+      ],
+      "gen_seconds_median": 263.86398714499956,
+      "gen_seconds_min": 263.75152629900003,
+      "samples_per_s_median": 37.898313097591306,
+      "samples_per_s_max": 37.914472535273866,
+      "decode_tokenizer": "VAEc4",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.5873229039998478,
+        1.4864827619994685,
+        1.4941206169996804
+      ],
+      "decode_seconds_median": 1.4941206169996804,
+      "decode_seconds_min": 1.4864827619994685,
+      "end_to_end_samples_per_s_median": 37.68492353348043
+    }
+  }
+}

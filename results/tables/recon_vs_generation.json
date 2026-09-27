@@ -1,0 +1,54 @@
+{
+  "_description": "Spearman of tokenizer reconstruction PSNR against the best default-config FID-192 over the six discrete generators, discrete panel (n=9), as in figures/fig_recon.py. best_fid_vq_vs_rest_auc is the rank-AUC separating the three VQ tokenizers from the six LFQ/FSQ ones by best FID-192.",
+  "psnr": {
+    "VQ1024": 28.0,
+    "VQ2048": 29.3,
+    "VQ4096": 29.4,
+    "LFQ1024": 28.0,
+    "LFQ2048": 28.1,
+    "LFQ4096": 28.6,
+    "FSQ1024": 29.4,
+    "FSQ2048": 29.6,
+    "FSQ4096": 29.7
+  },
+  "spearman_psnr_vs_best_fid": -0.033614632272640714,
+  "best_fid_vq_vs_rest_auc": 0.5555555555555556,
+  "best_fid": {
+    "VQ1024": {
+      "fid": 0.5183,
+      "generator": "transformer"
+    },
+    "VQ2048": {
+      "fid": 0.523,
+      "generator": "transformer"
+    },
+    "VQ4096": {
+      "fid": 0.3097,
+      "generator": "transformer"
+    },
+    "LFQ1024": {
+      "fid": 0.33,
+      "generator": "transformer"
+    },
+    "LFQ2048": {
+      "fid": 0.4498,
+      "generator": "transformer"
+    },
+    "LFQ4096": {
+      "fid": 0.4095,
+      "generator": "transformer"
+    },
+    "FSQ1024": {
+      "fid": 0.3851,
+      "generator": "transformer"
+    },
+    "FSQ2048": {
+      "fid": 0.728,
+      "generator": "transformer"
+    },
+    "FSQ4096": {
+      "fid": 0.37,
+      "generator": "transformer"
+    }
+  }
+}

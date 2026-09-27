@@ -1,0 +1,401 @@
+{
+  "cells": {
+    "LFQ1024_d3pm": {
+      "screen": {
+        "{\"num_timesteps\": 100, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.1828467845916748,
+          "val_is": 2.4943482875823975,
+          "time_s": 58.64438438415527
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.1827612966299057,
+          "val_is": 2.5563647747039795,
+          "time_s": 110.05752921104431
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.1425533890724182,
+          "val_is": 2.6485211849212646,
+          "time_s": 214.68187284469604
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.17680343985557556,
+          "val_is": 2.6683175563812256,
+          "time_s": 426.6234440803528
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.16377532482147217,
+          "val_is": 2.5568578243255615,
+          "time_s": 46.68722367286682
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.14233604073524475,
+          "val_is": 2.55560564994812,
+          "time_s": 111.83892297744751
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.14684736728668213,
+          "val_is": 2.6866981983184814,
+          "time_s": 213.36642026901245
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.28416207432746887,
+          "val_is": 2.718416929244995,
+          "time_s": 439.1082787513733
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.1445888727903366,
+          "val_is": 2.5921669006347656,
+          "time_s": 47.912222385406494
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.15763090550899506,
+          "val_is": 2.6755006313323975,
+          "time_s": 112.09361362457275
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.18614257872104645,
+          "val_is": 2.751655101776123,
+          "time_s": 218.0100085735321
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.3654073178768158,
+          "val_is": 2.767700672149658,
+          "time_s": 430.3784279823303
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.17587149143218994,
+          "val_is": 2.6032586097717285,
+          "time_s": 46.81680250167847
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.16856800019741058,
+          "val_is": 2.668743133544922,
+          "time_s": 107.91977596282959
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.23835603892803192,
+          "val_is": 2.7606170177459717,
+          "time_s": 212.16577887535095
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.4819925129413605,
+          "val_is": 2.713463306427002,
+          "time_s": 424.04387307167053
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.2714947462081909,
+          "val_is": 2.715280294418335,
+          "time_s": 46.25686264038086
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.26224371790885925,
+          "val_is": 2.714998960494995,
+          "time_s": 108.16311192512512
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.3558569848537445,
+          "val_is": 2.7113194465637207,
+          "time_s": 212.70562839508057
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.6044866442680359,
+          "val_is": 2.713810682296753,
+          "time_s": 421.19989919662476
+        }
+      },
+      "selected_hp": {
+        "temperature": 0.7,
+        "num_timesteps": 250
+      },
+      "val_fid_2k": 0.14233604073524475,
+      "test_fid_10k": 0.09925179928541183,
+      "test_is_10k": 2.621859073638916,
+      "final_time_s": 536.5651414394379,
+      "default_fid": 0.44,
+      "old_test_selected": 0.09
+    },
+    "LFQ1024_sedd": {
+      "screen": {
+        "{\"num_timesteps\": 100, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.3110073506832123,
+          "val_is": 2.5773892402648926,
+          "time_s": 46.37691903114319
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.26665574312210083,
+          "val_is": 2.6265056133270264,
+          "time_s": 109.24036836624146
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.16896794736385345,
+          "val_is": 2.6181509494781494,
+          "time_s": 213.34474420547485
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.5}": {
+          "hp": {
+            "temperature": 0.5,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.22217760980129242,
+          "val_is": 2.7210865020751953,
+          "time_s": 423.2951650619507
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.21452192962169647,
+          "val_is": 2.6305387020111084,
+          "time_s": 46.525646686553955
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.14073370397090912,
+          "val_is": 2.6459624767303467,
+          "time_s": 110.21097302436829
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.1734684705734253,
+          "val_is": 2.6334047317504883,
+          "time_s": 214.45948433876038
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.7}": {
+          "hp": {
+            "temperature": 0.7,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.36955001950263977,
+          "val_is": 2.7746787071228027,
+          "time_s": 425.62834882736206
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.18658114969730377,
+          "val_is": 2.6326262950897217,
+          "time_s": 46.023059129714966
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.18993216753005981,
+          "val_is": 2.7171013355255127,
+          "time_s": 109.9673719406128
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.24985294044017792,
+          "val_is": 2.7065932750701904,
+          "time_s": 214.19303822517395
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 0.9}": {
+          "hp": {
+            "temperature": 0.9,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.5416588187217712,
+          "val_is": 2.707141160964966,
+          "time_s": 425.8021790981293
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.21575024724006653,
+          "val_is": 2.7006378173828125,
+          "time_s": 46.76622200012207
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.23135513067245483,
+          "val_is": 2.6198980808258057,
+          "time_s": 109.53757429122925
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.3255458474159241,
+          "val_is": 2.669862985610962,
+          "time_s": 215.39602184295654
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 1.0}": {
+          "hp": {
+            "temperature": 1.0,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.6068084836006165,
+          "val_is": 2.635730504989624,
+          "time_s": 426.1582109928131
+        },
+        "{\"num_timesteps\": 100, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 100
+          },
+          "val_fid": 0.3816922605037689,
+          "val_is": 2.6814632415771484,
+          "time_s": 46.55051803588867
+        },
+        "{\"num_timesteps\": 250, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 250
+          },
+          "val_fid": 0.38774627447128296,
+          "val_is": 2.6949074268341064,
+          "time_s": 108.96339750289917
+        },
+        "{\"num_timesteps\": 500, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 500
+          },
+          "val_fid": 0.43330565094947815,
+          "val_is": 2.6733205318450928,
+          "time_s": 215.41756010055542
+        },
+        "{\"num_timesteps\": 1000, \"temperature\": 1.2}": {
+          "hp": {
+            "temperature": 1.2,
+            "num_timesteps": 1000
+          },
+          "val_fid": 0.8098565936088562,
+          "val_is": 2.682711362838745,
+          "time_s": 420.57250714302063
+        }
+      },
+      "selected_hp": {
+        "temperature": 0.7,
+        "num_timesteps": 250
+      },
+      "val_fid_2k": 0.14073370397090912,
+      "test_fid_10k": 0.12563762068748474,
+      "test_is_10k": 2.6775307655334473,
+      "final_time_s": 527.065366268158,
+      "default_fid": 0.41,
+      "old_test_selected": 0.11
+    }
+  },
+  "noise_floor_val": {},
+  "meta": {
+    "screen_split": "val",
+    "final_split": "test",
+    "screen_samples": 2000,
+    "final_samples": 10000,
+    "n_val": 11219,
+    "n_test": 22433
+  }
+}

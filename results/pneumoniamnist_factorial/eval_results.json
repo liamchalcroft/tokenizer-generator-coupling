@@ -1,0 +1,56 @@
+{
+  "pneumoniamnist_AE_continuous_flow": {
+    "fid": 1.0452938079833984,
+    "is_mean": 2.884124279022217,
+    "is_std": 0.05633068084716797,
+    "generation_time_s": 1209.3348019123077,
+    "num_samples": 10000,
+    "tokenizer": "AE",
+    "model": "continuous_flow"
+  },
+  "pneumoniamnist_FSQ_transformer": {
+    "fid": 5.520100116729736,
+    "is_mean": 2.107299566268921,
+    "is_std": 0.023894857615232468,
+    "generation_time_s": 205.818598985672,
+    "num_samples": 10000,
+    "tokenizer": "FSQ",
+    "model": "transformer"
+  },
+  "pneumoniamnist_LFQ_d3pm": {
+    "fid": 1.9294462203979492,
+    "is_mean": 2.0547213554382324,
+    "is_std": 0.028316238895058632,
+    "generation_time_s": 11478.274374008179,
+    "num_samples": 10000,
+    "tokenizer": "LFQ",
+    "model": "d3pm"
+  },
+  "pneumoniamnist_LFQ_transformer": {
+    "fid": 2.7310075759887695,
+    "is_mean": 2.0871822834014893,
+    "is_std": 0.024887649342417717,
+    "generation_time_s": 207.29854726791382,
+    "num_samples": 10000,
+    "tokenizer": "LFQ",
+    "model": "transformer"
+  },
+  "pneumoniamnist_VAE_diffusion": {
+    "fid": 4.140225410461426,
+    "is_mean": 2.410118579864502,
+    "is_std": 0.027875173836946487,
+    "generation_time_s": 10363.09691953659,
+    "num_samples": 10000,
+    "tokenizer": "VAE",
+    "model": "diffusion"
+  },
+  "pneumoniamnist_VQ_transformer": {
+    "fid": 2.0885415077209473,
+    "is_mean": 2.077416181564331,
+    "is_std": 0.028112594038248062,
+    "generation_time_s": 203.86320996284485,
+    "num_samples": 10000,
+    "tokenizer": "VQ",
+    "model": "transformer"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_description": "Cross-GPU calibration of default-config FID-192 (10K samples, test split) on six seed-42 vocabulary-1024 cells. fid_a6000 is a re-evaluation on an NVIDIA RTX A6000 with sampling seeded at 42; fid_l40s is the seed-42 value in seed_variance.json, evaluated on an NVIDIA L40S without a fixed sampling seed.",
+  "cells": {
+    "LFQ1024_transformer": {
+      "tokenizer": "LFQ1024",
+      "model": "transformer",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_transformer/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 203.3,
+      "tokens_file": "results/generated_tokens/chestmnist/LFQ1024_transformer_seed42_n10000.npz",
+      "fid_a6000": 0.32962849736213684,
+      "is_mean_a6000": 2.7390925884246826,
+      "is_std_a6000": 0.03676961362361908,
+      "fid_l40s": 0.335,
+      "difference_a6000_minus_l40s": -0.005371502637863179
+    },
+    "LFQ1024_maskgit": {
+      "tokenizer": "LFQ1024",
+      "model": "maskgit",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_maskgit/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 177.5,
+      "tokens_file": "results/generated_tokens/chestmnist/LFQ1024_maskgit_seed42_n10000.npz",
+      "fid_a6000": 1.9368953704833984,
+      "is_mean_a6000": 2.438114881515503,
+      "is_std_a6000": 0.053890954703092575,
+      "fid_l40s": 1.9026,
+      "difference_a6000_minus_l40s": 0.03429537048339837
+    },
+    "LFQ1024_d3pm": {
+      "tokenizer": "LFQ1024",
+      "model": "d3pm",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_d3pm/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 15681.5,
+      "tokens_file": "results/generated_tokens/chestmnist/LFQ1024_d3pm_seed42_n10000.npz",
+      "fid_a6000": 0.40861260890960693,
+      "is_mean_a6000": 2.783155918121338,
+      "is_std_a6000": 0.04394488036632538,
+      "fid_l40s": 0.4178,
+      "difference_a6000_minus_l40s": -0.009187391090393071
+    },
+    "FSQ1024_transformer": {
+      "tokenizer": "FSQ1024",
+      "model": "transformer",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_transformer/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 202.1,
+      "tokens_file": "results/generated_tokens/chestmnist/FSQ1024_transformer_seed42_n10000.npz",
+      "fid_a6000": 0.3916696012020111,
+      "is_mean_a6000": 2.7508084774017334,
+      "is_std_a6000": 0.032353539019823074,
+      "fid_l40s": 0.4039,
+      "difference_a6000_minus_l40s": -0.012230398797988873
+    },
+    "FSQ1024_maskgit": {
+      "tokenizer": "FSQ1024",
+      "model": "maskgit",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_maskgit/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 175.4,
+      "tokens_file": "results/generated_tokens/chestmnist/FSQ1024_maskgit_seed42_n10000.npz",
+      "fid_a6000": 1.1389867067337036,
+      "is_mean_a6000": 2.419584274291992,
+      "is_std_a6000": 0.035598624497652054,
+      "fid_l40s": 1.152,
+      "difference_a6000_minus_l40s": -0.0130132932662963
+    },
+    "FSQ1024_d3pm": {
+      "tokenizer": "FSQ1024",
+      "model": "d3pm",
+      "sampling_seed": 42,
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_d3pm/checkpoint_best.pt",
+      "num_samples": 10000,
+      "generation_time_s": 15508.4,
+      "tokens_file": "results/generated_tokens/chestmnist/FSQ1024_d3pm_seed42_n10000.npz",
+      "fid_a6000": 1.174830675125122,
+      "is_mean_a6000": 2.9310216903686523,
+      "is_std_a6000": 0.05217403918504715,
+      "fid_l40s": 1.1914,
+      "difference_a6000_minus_l40s": -0.016569324874877944
+    }
+  },
+  "mean_difference_a6000_minus_l40s": -0.0036794233640035,
+  "min_difference": -0.016569324874877944,
+  "max_difference": 0.03429537048339837
+}

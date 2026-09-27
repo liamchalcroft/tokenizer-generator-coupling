@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "device": "cuda",
+    "device_name": "NVIDIA RTX A6000",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "tf32_matmul": true,
+    "float32_matmul_precision": "high",
+    "medlatents": "0.1.0",
+    "medtokenizers": "0.1.0",
+    "script_sha256": "b1e46fc90b24829f885c5e34096166231b338f0e9a3d6983e383d3cc66377bde",
+    "python": "3.10.12",
+    "timestamp_utc": "2026-09-25T13:07:50+00:00",
+    "num_samples": 10000,
+    "repeats": 1,
+    "seed": 42,
+    "steps_override": null,
+    "smoke": false,
+    "weights": "random init (sampling cost is weight-independent)"
+  },
+  "generators": {
+    "d3pm": {
+      "model_type": "d3pm",
+      "steps": 1000,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        2723.897172602
+      ],
+      "gen_seconds_median": 2723.897172602,
+      "gen_seconds_min": 2723.897172602,
+      "samples_per_s_median": 3.671210536353511,
+      "samples_per_s_max": 3.671210536353511,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        2.3304670520010404
+      ],
+      "decode_seconds_median": 2.3304670520010404,
+      "decode_seconds_min": 2.3304670520010404,
+      "end_to_end_samples_per_s_median": 3.6680722675341775
+    },
+    "sedd": {
+      "model_type": "sedd",
+      "steps": 1000,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        2722.542159777
+      ],
+      "gen_seconds_median": 2722.542159777,
+      "gen_seconds_min": 2722.542159777,
+      "samples_per_s_median": 3.673037702681191,
+      "samples_per_s_max": 3.673037702681191,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        1.4862774619996344
+      ],
+      "decode_seconds_median": 1.4862774619996344,
+      "decode_seconds_min": 1.4862774619996344,
+      "end_to_end_samples_per_s_median": 3.6710336291994534
+    }
+  }
+}

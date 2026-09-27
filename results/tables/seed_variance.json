@@ -1,0 +1,140 @@
+{
+  "_description": "Training-seed variance of default-config FID-192 (10K samples, test split). Seed 42 is the main-table model; seeds 43 and 44 retrain the generator from scratch on the same frozen tokenizer. std is the population standard deviation over the three seeds. VQ-1024 rows were evaluated on an NVIDIA RTX A6000 and the LFQ-1024 and FSQ-1024 rows on an NVIDIA L40S; cross_gpu_calibration.json compares the two GPUs on six seed-42 cells.",
+  "cells": {
+    "chestmnist_VQ1024_transformer": {
+      "default_config": true,
+      "seeds": {
+        "42": 0.5183,
+        "43": 0.3468,
+        "44": 0.3487
+      },
+      "mean": 0.4046,
+      "std": 0.0804
+    },
+    "chestmnist_VQ1024_maskgit": {
+      "default_config": true,
+      "seeds": {
+        "42": 1.8622,
+        "43": 2.3589,
+        "44": 2.255
+      },
+      "mean": 2.1587,
+      "std": 0.2139
+    },
+    "chestmnist_VQ1024_d3pm": {
+      "default_config": true,
+      "seeds": {
+        "42": 1.3018,
+        "43": 1.3841,
+        "44": 1.2855
+      },
+      "mean": 1.3238,
+      "std": 0.0432
+    },
+    "chestmnist_LFQ1024_transformer": {
+      "default_config": true,
+      "seeds": {
+        "42": 0.335,
+        "43": 0.3392,
+        "44": 0.4853
+      },
+      "eval_time_s": {
+        "42": 76.0,
+        "43": 77.0,
+        "44": 77.0
+      },
+      "mean": 0.3865,
+      "std": 0.0699
+    },
+    "chestmnist_LFQ1024_maskgit": {
+      "default_config": true,
+      "seeds": {
+        "42": 1.9026,
+        "43": 1.8641,
+        "44": 1.9876
+      },
+      "eval_time_s": {
+        "42": 39.0,
+        "43": 40.0,
+        "44": 40.0
+      },
+      "mean": 1.9181,
+      "std": 0.0516
+    },
+    "chestmnist_LFQ1024_d3pm": {
+      "default_config": true,
+      "seeds": {
+        "42": 0.4178,
+        "43": 0.3951,
+        "44": 0.3634
+      },
+      "eval_time_s": {
+        "42": 1251.0,
+        "43": 1262.0,
+        "44": 1261.0
+      },
+      "mean": 0.3921,
+      "std": 0.0223
+    },
+    "chestmnist_FSQ1024_transformer": {
+      "default_config": true,
+      "seeds": {
+        "42": 0.4039,
+        "43": 0.8571,
+        "44": 0.4359
+      },
+      "eval_time_s": {
+        "42": 75.0,
+        "43": 76.0,
+        "44": 77.0
+      },
+      "mean": 0.5656,
+      "std": 0.2065
+    },
+    "chestmnist_FSQ1024_maskgit": {
+      "default_config": true,
+      "seeds": {
+        "42": 1.152,
+        "43": 1.1383,
+        "44": 1.1686
+      },
+      "eval_time_s": {
+        "42": 39.0,
+        "43": 39.0,
+        "44": 39.0
+      },
+      "mean": 1.153,
+      "std": 0.0124
+    },
+    "chestmnist_FSQ1024_d3pm": {
+      "default_config": true,
+      "seeds": {
+        "42": 1.1914,
+        "43": 1.1526,
+        "44": 1.2533
+      },
+      "eval_time_s": {
+        "42": 1259.0,
+        "43": 1258.0,
+        "44": 1263.0
+      },
+      "mean": 1.1991,
+      "std": 0.0415
+    },
+    "chestmnist_LFQ1024_sedd": {
+      "default_config": true,
+      "seeds": {
+        "42": 0.4113,
+        "43": 0.4229,
+        "44": 0.4844
+      },
+      "eval_time_s": {
+        "42": 1262.0,
+        "43": 1261.0,
+        "44": 1262.0
+      },
+      "mean": 0.4395,
+      "std": 0.0321
+    }
+  }
+}

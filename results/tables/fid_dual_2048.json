@@ -1,0 +1,144 @@
+{
+  "_description": "FID at 192 and 2048 Inception dimensions computed from one generation pass of 10K samples per cell, so the two metrics see identical samples. real_vs_real_floor resamples two disjoint halves of the real images.",
+  "meta": {
+    "num_samples": 10000,
+    "dims": [
+      192,
+      2048
+    ],
+    "device": "cuda",
+    "n_real": 22433
+  },
+  "cells": {
+    "AEdisc_continuous_flow": {
+      "label": "AE + RF",
+      "tokenizer": "AEdisc",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "gen_time_s": 3500.6,
+      "fid192": 0.07234132289886475,
+      "fid2048": 9.560949325561523
+    },
+    "LFQ1024_d3pm_tuned": {
+      "label": "LFQ-1024 + D3PM (tuned)",
+      "tokenizer": "LFQ1024",
+      "generator": "d3pm",
+      "tuned": true,
+      "gen_time_s": 3657.1,
+      "fid192": 0.08670856058597565,
+      "fid2048": 18.90753173828125
+    },
+    "VAEc2_diffusion": {
+      "label": "VAE-c2 + LDM",
+      "tokenizer": "VAEc2",
+      "generator": "diffusion",
+      "tuned": false,
+      "gen_time_s": 28274.6,
+      "fid192": 0.1452326774597168,
+      "fid2048": 26.952110290527344
+    },
+    "LFQ1024_transformer": {
+      "label": "LFQ-1024 + AR",
+      "tokenizer": "LFQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "gen_time_s": 151.2,
+      "fid192": 0.3350074589252472,
+      "fid2048": 51.53547286987305
+    },
+    "FSQ1024_transformer": {
+      "label": "FSQ-1024 + AR",
+      "tokenizer": "FSQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "gen_time_s": 117.5,
+      "fid192": 0.4145788252353668,
+      "fid2048": 35.131832122802734
+    },
+    "LFQ1024_d3pm": {
+      "label": "LFQ-1024 + D3PM",
+      "tokenizer": "LFQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "gen_time_s": 13762.8,
+      "fid192": 0.41956374049186707,
+      "fid2048": 40.10962677001953
+    },
+    "FSQ1024_maskgit": {
+      "label": "FSQ-1024 + MaskGIT",
+      "tokenizer": "FSQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "gen_time_s": 188.2,
+      "fid192": 1.1562005281448364,
+      "fid2048": 194.49859619140625
+    },
+    "VQ1024_maskgit": {
+      "label": "VQ-1024 + MaskGIT",
+      "tokenizer": "VQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "gen_time_s": 187.9,
+      "fid192": 1.8268790245056152,
+      "fid2048": 217.47280883789062
+    },
+    "LFQ1024_flow": {
+      "label": "LFQ-1024 + DFM",
+      "tokenizer": "LFQ1024",
+      "generator": "flow",
+      "tuned": false,
+      "gen_time_s": 1642.4,
+      "fid192": 1.730282187461853,
+      "fid2048": 90.30479431152344
+    },
+    "LFQ1024_maskgit": {
+      "label": "LFQ-1024 + MaskGIT",
+      "tokenizer": "LFQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "gen_time_s": 188.2,
+      "fid192": 1.942124605178833,
+      "fid2048": 78.59556579589844
+    },
+    "VQ1024_transformer": {
+      "label": "VQ-1024 + AR",
+      "tokenizer": "VQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "gen_time_s": 214.6,
+      "fid192": 0.527262270450592,
+      "fid2048": 58.730037689208984
+    },
+    "FSQ4096_bayesian_flow": {
+      "label": "FSQ-4096 + BFN",
+      "tokenizer": "FSQ4096",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "gen_time_s": 19540.0,
+      "fid192": 8.433917999267578,
+      "fid2048": 190.57449340820312
+    }
+  },
+  "real_vs_real_floor": {
+    "192": {
+      "mean": 0.0019744220684515313,
+      "std": 0.0009347061916223613,
+      "min": 0.0006956644938327372,
+      "max": 0.004177737049758434,
+      "n_negative": 0,
+      "n_per_half": 10000,
+      "n_boot": 20
+    },
+    "2048": {
+      "mean": 2.307059037685394,
+      "std": 0.015624474096512568,
+      "min": 2.2829513549804688,
+      "max": 2.3364124298095703,
+      "n_negative": 0,
+      "n_per_half": 10000,
+      "n_boot": 20
+    }
+  },
+  "spearman_fid192_vs_fid2048": 0.8881118881118881,
+  "spearman_n": 12
+}

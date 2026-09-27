@@ -1,0 +1,56 @@
+{
+  "organamnist_AE_continuous_flow": {
+    "fid": 0.9445000886917114,
+    "is_mean": 3.3495843410491943,
+    "is_std": 0.06629586964845657,
+    "generation_time_s": 769.6739318370819,
+    "num_samples": 10000,
+    "tokenizer": "AE",
+    "model": "continuous_flow"
+  },
+  "organamnist_FSQ_transformer": {
+    "fid": 4.86544942855835,
+    "is_mean": 3.2310616970062256,
+    "is_std": 0.03205088526010513,
+    "generation_time_s": 144.2189543247223,
+    "num_samples": 10000,
+    "tokenizer": "FSQ",
+    "model": "transformer"
+  },
+  "organamnist_LFQ_d3pm": {
+    "fid": 4.893521308898926,
+    "is_mean": 2.100311756134033,
+    "is_std": 0.04286440461874008,
+    "generation_time_s": 6789.719140768051,
+    "num_samples": 10000,
+    "tokenizer": "LFQ",
+    "model": "d3pm"
+  },
+  "organamnist_LFQ_transformer": {
+    "fid": 2.116220712661743,
+    "is_mean": 2.5491764545440674,
+    "is_std": 0.05155132710933685,
+    "generation_time_s": 201.3874430656433,
+    "num_samples": 10000,
+    "tokenizer": "LFQ",
+    "model": "transformer"
+  },
+  "organamnist_VAE_diffusion": {
+    "fid": 9.877099990844727,
+    "is_mean": 2.91158127784729,
+    "is_std": 0.06278924643993378,
+    "generation_time_s": 4268.17352938652,
+    "num_samples": 10000,
+    "tokenizer": "VAE",
+    "model": "diffusion"
+  },
+  "organamnist_VQ_transformer": {
+    "fid": 3.8398351669311523,
+    "is_mean": 3.0631816387176514,
+    "is_std": 0.08735927939414978,
+    "generation_time_s": 93.23483443260193,
+    "num_samples": 10000,
+    "tokenizer": "VQ",
+    "model": "transformer"
+  }
+}

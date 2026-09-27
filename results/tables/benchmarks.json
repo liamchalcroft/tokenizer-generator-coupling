@@ -1,0 +1,120 @@
+{
+  "tokenizers": [
+    {
+      "quantizer": "VQ",
+      "resolution": "64\u00b2",
+      "dim": 2,
+      "params_M": 8.5,
+      "encode_imgs_per_sec": 509.6,
+      "decode_imgs_per_sec": 1531.5,
+      "encode_memory_GB": 0.15,
+      "decode_memory_GB": 0.12,
+      "input_size_MB": 0.02,
+      "latent_size_MB": 0.0001,
+      "compression_ratio": 128.0,
+      "latent_shape": [
+        8,
+        8
+      ]
+    },
+    {
+      "quantizer": "LFQ",
+      "resolution": "64\u00b2",
+      "dim": 2,
+      "params_M": 8.5,
+      "encode_imgs_per_sec": 674.3,
+      "decode_imgs_per_sec": 2004.3,
+      "encode_memory_GB": 0.15,
+      "decode_memory_GB": 0.13,
+      "input_size_MB": 0.02,
+      "latent_size_MB": 0.0001,
+      "compression_ratio": 128.0,
+      "latent_shape": [
+        8,
+        8
+      ]
+    },
+    {
+      "quantizer": "FSQ",
+      "resolution": "64\u00b2",
+      "dim": 2,
+      "params_M": 8.5,
+      "encode_imgs_per_sec": 562.9,
+      "decode_imgs_per_sec": 1443.5,
+      "encode_memory_GB": 0.15,
+      "decode_memory_GB": 0.13,
+      "input_size_MB": 0.02,
+      "latent_size_MB": 0.0001,
+      "compression_ratio": 128.0,
+      "latent_shape": [
+        8,
+        8
+      ]
+    },
+    {
+      "quantizer": "VAE",
+      "resolution": "64\u00b2",
+      "dim": 2,
+      "params_M": 8.5,
+      "encode_imgs_per_sec": 495.6,
+      "decode_imgs_per_sec": 714.0,
+      "encode_memory_GB": 0.15,
+      "decode_memory_GB": 0.13,
+      "input_size_MB": 0.02,
+      "latent_size_MB": 0.001,
+      "compression_ratio": 16.0,
+      "latent_shape": [
+        4,
+        8,
+        8
+      ]
+    }
+  ],
+  "generators": [
+    {
+      "model_type": "transformer",
+      "seq_len": 64,
+      "vocab_size": 1024,
+      "params_M": 38.9,
+      "imgs_per_sec": 9.16,
+      "time_per_batch_s": 1.75,
+      "memory_GB": 0.3
+    },
+    {
+      "model_type": "maskgit",
+      "seq_len": 64,
+      "vocab_size": 1024,
+      "params_M": 38.9,
+      "imgs_per_sec": 42.93,
+      "time_per_batch_s": 0.37,
+      "memory_GB": 0.24
+    },
+    {
+      "model_type": "flow",
+      "seq_len": 64,
+      "vocab_size": 1024,
+      "params_M": 58.2,
+      "imgs_per_sec": 372.05,
+      "time_per_batch_s": 0.04,
+      "memory_GB": 0.29
+    },
+    {
+      "model_type": "d3pm",
+      "seq_len": 64,
+      "vocab_size": 1024,
+      "params_M": 58.2,
+      "imgs_per_sec": 0.46,
+      "time_per_batch_s": 34.57,
+      "memory_GB": 0.29
+    },
+    {
+      "model_type": "sedd",
+      "seq_len": 64,
+      "vocab_size": 1024,
+      "params_M": 58.2,
+      "imgs_per_sec": 0.46,
+      "time_per_batch_s": 34.46,
+      "memory_GB": 0.29
+    }
+  ]
+}

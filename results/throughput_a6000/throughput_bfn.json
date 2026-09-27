@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "device": "cuda",
+    "device_name": "NVIDIA RTX A6000",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "cudnn": 92000,
+    "tf32_matmul": true,
+    "float32_matmul_precision": "high",
+    "medlatents": "0.1.0",
+    "medtokenizers": "0.1.0",
+    "script_sha256": "b1e46fc90b24829f885c5e34096166231b338f0e9a3d6983e383d3cc66377bde",
+    "python": "3.10.12",
+    "timestamp_utc": "2026-09-25T15:34:02+00:00",
+    "num_samples": 10000,
+    "repeats": 1,
+    "seed": 42,
+    "steps_override": null,
+    "smoke": false,
+    "weights": "random init (sampling cost is weight-independent)"
+  },
+  "generators": {
+    "bfn": {
+      "model_type": "bayesian_flow",
+      "steps": 1000,
+      "temperature": 0.9,
+      "batch_size": 128,
+      "dtype": "float32",
+      "autocast": null,
+      "sampling_path": "evaluate_chestmnist_generation.generate_discrete_samples",
+      "params_M": 58.16,
+      "vocab_size": 1024,
+      "seq_len": 64,
+      "latent_shape": null,
+      "num_samples": 10000,
+      "gen_seconds": [
+        2875.1604549910007
+      ],
+      "gen_seconds_median": 2875.1604549910007,
+      "gen_seconds_min": 2875.1604549910007,
+      "samples_per_s_median": 3.4780667571581843,
+      "samples_per_s_max": 3.4780667571581843,
+      "decode_tokenizer": "LFQ1024",
+      "decode_batch_size": 128,
+      "decode_seconds": [
+        2.343403375998605
+      ],
+      "decode_seconds_median": 2.343403375998605,
+      "decode_seconds_min": 2.343403375998605,
+      "end_to_end_samples_per_s_median": 3.4752342628221737
+    }
+  }
+}

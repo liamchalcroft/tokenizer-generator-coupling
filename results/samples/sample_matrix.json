@@ -1,0 +1,1445 @@
+{
+  "_description": "Uncurated fixed-seed samples: one batch of 16 per cell, torch.manual_seed(0) immediately before sampling, kept in generation order. Default cells use the evaluation's sampler settings; *_tuned cells use the validation-selected settings from results/tables/hp_revalidation.json.",
+  "n_cells": 72,
+  "n_failed": 0,
+  "samples_per_cell": 16,
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.10.0+cu126",
+  "medlatents": "0.1.0",
+  "medtokenizers": "0.1.0",
+  "total_generation_time_s": 714.7,
+  "total_wall_time_s": 1473.4,
+  "cells": [
+    {
+      "cell": "VQ1024_transformer",
+      "tokenizer": "VQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "8800557a507713a16aedfb693447c84a408d3f7bc1e401ad08a53f592634bf1b",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 0.5183159112930298,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.272,
+      "decode_time_s": 7.339,
+      "pixel_mean": 139.74899291992188,
+      "pixel_std": 56.00376238221258
+    },
+    {
+      "cell": "VQ1024_maskgit",
+      "tokenizer": "VQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "359b7d164b72037b0700fa74e32ee130747ba0e899aeec5bd617afc3a7f7405f",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 1.8621867895126343,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.248,
+      "decode_time_s": 0.011,
+      "pixel_mean": 135.81231689453125,
+      "pixel_std": 42.40692025657634
+    },
+    {
+      "cell": "VQ1024_flow",
+      "tokenizer": "VQ1024",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "add7b732fc64166a140949e9b11583ae2634b943bfe80bcb6235942dfd2c1c68",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 4.416961669921875,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.532,
+      "decode_time_s": 0.011,
+      "pixel_mean": 130.39959716796875,
+      "pixel_std": 44.88423003999332
+    },
+    {
+      "cell": "VQ1024_d3pm",
+      "tokenizer": "VQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "e7a97c4254f2ef59e6f319307400efb95cb78e7537cc808ccfbb3f39212e13e4",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 1.3017878532409668,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.403,
+      "decode_time_s": 0.01,
+      "pixel_mean": 114.42269897460938,
+      "pixel_std": 59.39456045926369
+    },
+    {
+      "cell": "VQ1024_sedd",
+      "tokenizer": "VQ1024",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "313c3847e0e07eda3855a0571397727425d0c003ab24556f0973819861e92d1d",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 1.3064775466918945,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 19.983,
+      "decode_time_s": 0.01,
+      "pixel_mean": 116.437255859375,
+      "pixel_std": 57.05704040094785
+    },
+    {
+      "cell": "VQ1024_bayesian_flow",
+      "tokenizer": "VQ1024",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ1024_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "d0d61c28ee3b21e6d1139414ec159475aaa23e5175b1a058ce90a173a486cd73",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ1024_final/model.safetensors",
+      "fid192": 5.976416110992432,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 26.565,
+      "decode_time_s": 0.009,
+      "pixel_mean": 131.66326904296875,
+      "pixel_std": 47.985960341025454
+    },
+    {
+      "cell": "VQ2048_transformer",
+      "tokenizer": "VQ2048",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "3a20419fc9dcae77ede5cf1e1113bc4da89d0019969b79147debb30c50bc2cb2",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 0.5230394005775452,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.99,
+      "decode_time_s": 0.01,
+      "pixel_mean": 132.0747833251953,
+      "pixel_std": 58.09747706162422
+    },
+    {
+      "cell": "VQ2048_maskgit",
+      "tokenizer": "VQ2048",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "c8825b5454b49944c38236babe16e46ececdc19826c241791dc2ba21c3de657f",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 3.331676483154297,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.183,
+      "decode_time_s": 0.009,
+      "pixel_mean": 140.32203674316406,
+      "pixel_std": 46.17916516820059
+    },
+    {
+      "cell": "VQ2048_flow",
+      "tokenizer": "VQ2048",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "6436a5cf2760da365aa4d05b4be0b369686f0360e56276c4c1cd50e6e8ee2c46",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 2.7499470710754395,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.334,
+      "decode_time_s": 0.01,
+      "pixel_mean": 122.14530944824219,
+      "pixel_std": 49.41899450716113
+    },
+    {
+      "cell": "VQ2048_d3pm",
+      "tokenizer": "VQ2048",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "2771484183839e9ab96787f84932d675cfa82a2bb50a4531ebc38864ca9ad873",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 2.11914324760437,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 15.7,
+      "decode_time_s": 0.006,
+      "pixel_mean": 127.63084411621094,
+      "pixel_std": 57.68103374794279
+    },
+    {
+      "cell": "VQ2048_sedd",
+      "tokenizer": "VQ2048",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "d3a6690bd00243faf639c79e758e730cb79b2e2c8291058cd3249f7a0c59927a",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 2.1331682205200195,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 16.877,
+      "decode_time_s": 0.009,
+      "pixel_mean": 127.84197998046875,
+      "pixel_std": 56.25731066108616
+    },
+    {
+      "cell": "VQ2048_bayesian_flow",
+      "tokenizer": "VQ2048",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ2048_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "4c4f822c5d055e70abd1737258552ba61e9b5c7928fa4f408c37582e813c734b",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ2048_final/model.safetensors",
+      "fid192": 3.9388527870178223,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 27.218,
+      "decode_time_s": 0.01,
+      "pixel_mean": 128.89605712890625,
+      "pixel_std": 49.334007524410694
+    },
+    {
+      "cell": "VQ4096_transformer",
+      "tokenizer": "VQ4096",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "8c5371ed31dae8698c79a884560e7cd349fb7eee59e2832d494f7e37fc2139e3",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 0.30972424149513245,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.665,
+      "decode_time_s": 0.006,
+      "pixel_mean": 126.64756774902344,
+      "pixel_std": 59.21299481334572
+    },
+    {
+      "cell": "VQ4096_maskgit",
+      "tokenizer": "VQ4096",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "8253c3579527d306e8899c26c710241da44ece81c14e1441e84a36ad9ea425b7",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 2.028083086013794,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.196,
+      "decode_time_s": 0.009,
+      "pixel_mean": 135.61766052246094,
+      "pixel_std": 47.41131966542874
+    },
+    {
+      "cell": "VQ4096_flow",
+      "tokenizer": "VQ4096",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "e3ca3ddfb028c5da28fd256fee6499b51971ecfd91d727656bad4c58b9c41b8b",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 3.3897600173950195,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.18,
+      "decode_time_s": 0.009,
+      "pixel_mean": 131.04197692871094,
+      "pixel_std": 51.64056169647174
+    },
+    {
+      "cell": "VQ4096_d3pm",
+      "tokenizer": "VQ4096",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "2a9335f50f706794245dc9dc8e375478387dc9b33a667bb64b1868d8c946d0e6",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 3.6919686794281006,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 17.409,
+      "decode_time_s": 0.007,
+      "pixel_mean": 133.0426788330078,
+      "pixel_std": 53.82502678789309
+    },
+    {
+      "cell": "VQ4096_sedd",
+      "tokenizer": "VQ4096",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "8e56e502b2f7d5a12fab6fe7354b2d87a1e44aadc31b28daa7aabff98ac139d9",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 3.5367178916931152,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 20.027,
+      "decode_time_s": 0.01,
+      "pixel_mean": 134.641357421875,
+      "pixel_std": 52.94842473711358
+    },
+    {
+      "cell": "VQ4096_bayesian_flow",
+      "tokenizer": "VQ4096",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VQ4096_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "143f26f178f250f325ae8b5336c12feaf9a973c094a0f11c5f40e99ffc066df1",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VQ4096_final/model.safetensors",
+      "fid192": 4.21628999710083,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 25.318,
+      "decode_time_s": 0.01,
+      "pixel_mean": 130.137939453125,
+      "pixel_std": 53.39571434673289
+    },
+    {
+      "cell": "LFQ1024_transformer",
+      "tokenizer": "LFQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "ef41068f9d9ccf0c8fbfcab695a50d32ee8f213dc282ab72d93bf41d3fc6852a",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 0.33,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.639,
+      "decode_time_s": 0.498,
+      "pixel_mean": 133.9447784423828,
+      "pixel_std": 60.16865501575359
+    },
+    {
+      "cell": "LFQ1024_maskgit",
+      "tokenizer": "LFQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "223e7d087afa9943af7782616e8d5cd6d6b63bfc852409100d6f200ac0c03827",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 1.91,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.19,
+      "decode_time_s": 0.008,
+      "pixel_mean": 131.44493103027344,
+      "pixel_std": 50.13374800315771
+    },
+    {
+      "cell": "LFQ1024_flow",
+      "tokenizer": "LFQ1024",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "d2927f9c20d97a3ffbe052b7b901a5b91680691c0b8e8ac06cbded3567f17626",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 1.77,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.188,
+      "decode_time_s": 0.014,
+      "pixel_mean": 130.79676818847656,
+      "pixel_std": 56.97417121147183
+    },
+    {
+      "cell": "LFQ1024_d3pm",
+      "tokenizer": "LFQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "57b35b9726d165e11fd87271cfb8b0b03c6aaa2ce0856d89df47a3e3ced9b6cd",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 0.44,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.244,
+      "decode_time_s": 0.009,
+      "pixel_mean": 131.23724365234375,
+      "pixel_std": 60.16652526586992
+    },
+    {
+      "cell": "LFQ1024_sedd",
+      "tokenizer": "LFQ1024",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "56a865f3a6ac5e18d4b0566ce014b319401854c8ad2507af224aa715ba5eafde",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 0.41,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 20.202,
+      "decode_time_s": 0.009,
+      "pixel_mean": 133.77008056640625,
+      "pixel_std": 59.13918033732013
+    },
+    {
+      "cell": "LFQ1024_bayesian_flow",
+      "tokenizer": "LFQ1024",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "4ca2947d01da409ed498f8179ab5e15308c3d5f6f2880c72ec29f99c47ee2015",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 2.27,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 26.631,
+      "decode_time_s": 0.011,
+      "pixel_mean": 127.22444152832031,
+      "pixel_std": 58.0249558644861
+    },
+    {
+      "cell": "LFQ2048_transformer",
+      "tokenizer": "LFQ2048",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "f6ac2848bcb251a72a9da79882d39bcf5fb4a04cbbdaa60d2edef5f6568322b0",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 0.4498131573200226,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.152,
+      "decode_time_s": 0.012,
+      "pixel_mean": 129.09645080566406,
+      "pixel_std": 56.7873379166265
+    },
+    {
+      "cell": "LFQ2048_maskgit",
+      "tokenizer": "LFQ2048",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "b3c846dd4c42e869fd9ecd438486b5d9b79861014bb1ffa94dd5a96b833c1fd7",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 3.3967463970184326,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.195,
+      "decode_time_s": 0.01,
+      "pixel_mean": 143.90597534179688,
+      "pixel_std": 44.04018311937257
+    },
+    {
+      "cell": "LFQ2048_flow",
+      "tokenizer": "LFQ2048",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "48ace4f6641e52701ec54cc35c6c10656ef93cd8edd280fcb73c853f3350cc88",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 1.327580213546753,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.163,
+      "decode_time_s": 0.009,
+      "pixel_mean": 124.33073425292969,
+      "pixel_std": 53.023095958873434
+    },
+    {
+      "cell": "LFQ2048_d3pm",
+      "tokenizer": "LFQ2048",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "daf0cd6ff18b58d96971d6941bb606e926f77f95c2bea39171bafc29b3a4407c",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 0.7359216213226318,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.847,
+      "decode_time_s": 0.009,
+      "pixel_mean": 127.58587646484375,
+      "pixel_std": 55.08542431231998
+    },
+    {
+      "cell": "LFQ2048_sedd",
+      "tokenizer": "LFQ2048",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "1ddbea2b4cb492bd202497aea43caaad2b39d97e9b22b7ec4f798b04299e02bc",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 1.0207842588424683,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 17.237,
+      "decode_time_s": 0.011,
+      "pixel_mean": 123.65843200683594,
+      "pixel_std": 54.13474120835616
+    },
+    {
+      "cell": "LFQ2048_bayesian_flow",
+      "tokenizer": "LFQ2048",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ2048_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "8784f1d38dc9fb3fb4fb3c4691197f15c2eec7d669b5b5aa6bcaa700a9c785f8",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ2048_final/model.safetensors",
+      "fid192": 1.46,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 25.693,
+      "decode_time_s": 0.009,
+      "pixel_mean": 132.2064666748047,
+      "pixel_std": 53.31862424345121
+    },
+    {
+      "cell": "LFQ4096_transformer",
+      "tokenizer": "LFQ4096",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "d23996aefb18127529cc32bf99c464f6d4a839d372c5c710ba4a0fa73318d591",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 0.409506231546402,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.039,
+      "decode_time_s": 0.01,
+      "pixel_mean": 120.57296752929688,
+      "pixel_std": 58.103624717229856
+    },
+    {
+      "cell": "LFQ4096_maskgit",
+      "tokenizer": "LFQ4096",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "28ae43c998df7058e095203d3b604f30f33e6ba84359152c37dccf4f8d3b879a",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 1.2652175426483154,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.187,
+      "decode_time_s": 0.009,
+      "pixel_mean": 138.7282257080078,
+      "pixel_std": 52.98200055906768
+    },
+    {
+      "cell": "LFQ4096_flow",
+      "tokenizer": "LFQ4096",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "d3002bc6cc97d1231a775149d0fbc3b7a795b75c3a500bbbe004a218ea859172",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 2.21237850189209,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.088,
+      "decode_time_s": 0.01,
+      "pixel_mean": 125.6998291015625,
+      "pixel_std": 54.521734406343604
+    },
+    {
+      "cell": "LFQ4096_d3pm",
+      "tokenizer": "LFQ4096",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "7ad0ffab6027adb6b0b6c07dca6a1d878b7481cbabf54f5b3da8608aa2d3fabe",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 1.91816246509552,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 13.275,
+      "decode_time_s": 0.005,
+      "pixel_mean": 122.66566467285156,
+      "pixel_std": 55.81554024422976
+    },
+    {
+      "cell": "LFQ4096_sedd",
+      "tokenizer": "LFQ4096",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "683877f7e19584c5ce9778d1c3afc025e98af9801016ccb5aee55c1b831c21e8",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 2.0764687061309814,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.371,
+      "decode_time_s": 0.009,
+      "pixel_mean": 123.05767822265625,
+      "pixel_std": 55.82404230786068
+    },
+    {
+      "cell": "LFQ4096_bayesian_flow",
+      "tokenizer": "LFQ4096",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ4096_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "2bb08003378e43fc9cef4f96241c0ee063e7c01ee133005d99b940c4879565d4",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ_final/model.safetensors",
+      "fid192": 2.4116482734680176,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 28.15,
+      "decode_time_s": 0.009,
+      "pixel_mean": 124.77897644042969,
+      "pixel_std": 57.14275933451658
+    },
+    {
+      "cell": "FSQ1024_transformer",
+      "tokenizer": "FSQ1024",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "cd247a6a653e654a1c62e2401b601c5871ec5919ad3a13f596188cecf0deb008",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 0.38509857654571533,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.074,
+      "decode_time_s": 0.034,
+      "pixel_mean": 137.38067626953125,
+      "pixel_std": 61.54739524708469
+    },
+    {
+      "cell": "FSQ1024_maskgit",
+      "tokenizer": "FSQ1024",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "b340d10761e697c877e31386454892cb0d7c63ddd209f5a557330167d87c4fe3",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 1.1524759531021118,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.188,
+      "decode_time_s": 0.012,
+      "pixel_mean": 137.3420867919922,
+      "pixel_std": 52.931904035146175
+    },
+    {
+      "cell": "FSQ1024_flow",
+      "tokenizer": "FSQ1024",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "4c1bdc30286ddfd0d17f5eab5ef6e6721ea796cb5380cad9b4563878d27fdf47",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 3.0188894271850586,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.263,
+      "decode_time_s": 0.01,
+      "pixel_mean": 139.8306427001953,
+      "pixel_std": 46.138618803897565
+    },
+    {
+      "cell": "FSQ1024_d3pm",
+      "tokenizer": "FSQ1024",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "e724ca12d213e4d4d5a91fd26dd174a97fc37ec46cb04a6dd64c6b283ada7629",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 1.2082065343856812,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 20.075,
+      "decode_time_s": 0.009,
+      "pixel_mean": 118.86453247070312,
+      "pixel_std": 59.0883943266793
+    },
+    {
+      "cell": "FSQ1024_sedd",
+      "tokenizer": "FSQ1024",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "f8639267e627275d7276639ca77d916b0571ca94915d70ecc95ff924b5e19432",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 1.0496118068695068,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 19.813,
+      "decode_time_s": 0.01,
+      "pixel_mean": 117.13986206054688,
+      "pixel_std": 58.93286606816536
+    },
+    {
+      "cell": "FSQ1024_bayesian_flow",
+      "tokenizer": "FSQ1024",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ1024_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "1b7f1c9c1d871302e3aeea30708fb81cc06c74de7d4616684b76d99cbb9c19a5",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ1024_final/model.safetensors",
+      "fid192": 7.59897518157959,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.324,
+      "decode_time_s": 0.008,
+      "pixel_mean": 130.5350799560547,
+      "pixel_std": 45.55522365179478
+    },
+    {
+      "cell": "FSQ2048_transformer",
+      "tokenizer": "FSQ2048",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "d7f3a8be6779858c7d0137fa887b838bcb9036012a13f732c35a095116d0789c",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 0.7280181050300598,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.751,
+      "decode_time_s": 0.005,
+      "pixel_mean": 145.201171875,
+      "pixel_std": 59.42332939396301
+    },
+    {
+      "cell": "FSQ2048_maskgit",
+      "tokenizer": "FSQ2048",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "7c6957c497b9a9b414ad5ef6a9cfae379ec2dbda865cc24dfe26aa06a7c350c8",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 1.4775182008743286,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.19,
+      "decode_time_s": 0.009,
+      "pixel_mean": 138.01063537597656,
+      "pixel_std": 44.04133183403888
+    },
+    {
+      "cell": "FSQ2048_flow",
+      "tokenizer": "FSQ2048",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "929015f788b04e337ee3763b3fe21086f3a21788b95ffd76b78d3eaa14baf9ed",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 1.8564873933792114,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.245,
+      "decode_time_s": 0.01,
+      "pixel_mean": 122.03178405761719,
+      "pixel_std": 43.88222429732246
+    },
+    {
+      "cell": "FSQ2048_d3pm",
+      "tokenizer": "FSQ2048",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "b339756ffa8496df5c0b469f2a05056a6920d7409753d9a2fa0d34ded47f4bcf",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 2.504476308822632,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 17.401,
+      "decode_time_s": 0.01,
+      "pixel_mean": 127.23379516601562,
+      "pixel_std": 50.37574480369872
+    },
+    {
+      "cell": "FSQ2048_sedd",
+      "tokenizer": "FSQ2048",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "0ff149ce0a8ac11c1a38802f270fd21bf2da6e15a0c94064a11a7e64e28ee4b9",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 2.4618301391601562,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 20.3,
+      "decode_time_s": 0.009,
+      "pixel_mean": 125.75761413574219,
+      "pixel_std": 51.05070678050498
+    },
+    {
+      "cell": "FSQ2048_bayesian_flow",
+      "tokenizer": "FSQ2048",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ2048_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "211873c939316c966b9574f0330bbeef9ecc07db782553f2bb1e3c5d1e2bd228",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ2048_final/model.safetensors",
+      "fid192": 4.827630996704102,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 27.132,
+      "decode_time_s": 0.022,
+      "pixel_mean": 125.30368041992188,
+      "pixel_std": 44.53745676185254
+    },
+    {
+      "cell": "FSQ4096_transformer",
+      "tokenizer": "FSQ4096",
+      "generator": "transformer",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_transformer/checkpoint_best.pt",
+      "checkpoint_sha256": "6d73385d88a461afc47b072bbb6ce65edc63ec550c1cf778c9ada96f7e1dc088",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 0.37,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.033,
+      "decode_time_s": 0.01,
+      "pixel_mean": 131.6571502685547,
+      "pixel_std": 60.79754580380486
+    },
+    {
+      "cell": "FSQ4096_maskgit",
+      "tokenizer": "FSQ4096",
+      "generator": "maskgit",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 12,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_maskgit/checkpoint_best.pt",
+      "checkpoint_sha256": "c6c9b442502aa61517ac15df1da95f4ad06eb1a005cd38be87e3d9f0cc81ac5e",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 1.46,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 0.2,
+      "decode_time_s": 0.011,
+      "pixel_mean": 138.37066650390625,
+      "pixel_std": 54.41907586511189
+    },
+    {
+      "cell": "FSQ4096_flow",
+      "tokenizer": "FSQ4096",
+      "generator": "flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_euler_steps": 100,
+        "source_dist": "mask"
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "e1357df3ab8185432be3f3d30a2f411f3e3e77045bcea6f91c136f60736cb251",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 2.69,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 2.233,
+      "decode_time_s": 0.01,
+      "pixel_mean": 136.81764221191406,
+      "pixel_std": 50.92776214825384
+    },
+    {
+      "cell": "FSQ4096_d3pm",
+      "tokenizer": "FSQ4096",
+      "generator": "d3pm",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "5918d736197539dff9e3e7f3d59111bd47bc9fd10ad2d72776b9a837d3b29f8c",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 7.399479389190674,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 15.027,
+      "decode_time_s": 0.011,
+      "pixel_mean": 135.4784698486328,
+      "pixel_std": 49.81303631325389
+    },
+    {
+      "cell": "FSQ4096_sedd",
+      "tokenizer": "FSQ4096",
+      "generator": "sedd",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "00cf5a39f61515a51f34050a195165a54acd876c4007e1cdc8da8cb2640ca2ea",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 7.34,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 18.4,
+      "decode_time_s": 0.006,
+      "pixel_mean": 132.3886260986328,
+      "pixel_std": 50.10578608527397
+    },
+    {
+      "cell": "FSQ4096_bayesian_flow",
+      "tokenizer": "FSQ4096",
+      "generator": "bayesian_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_FSQ4096_bayesian_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "20a08938f290b9a3721883212506f41d3ec50fc30693012988cd6407a902a88c",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_FSQ4096_final/model.safetensors",
+      "fid192": 8.456082344055176,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 20.22,
+      "decode_time_s": 0.005,
+      "pixel_mean": 136.30247497558594,
+      "pixel_std": 47.20813572458981
+    },
+    {
+      "cell": "VAEc1_diffusion",
+      "tokenizer": "VAEc1",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc1_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "6621f02a04c1369b8a0df36d78b7ed19d42aa0f5dcce273e80811fc2aad3b346",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc1_final/model.safetensors",
+      "fid192": 0.2156551480293274,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 13.23,
+      "decode_time_s": 0.649,
+      "pixel_mean": 125.24833679199219,
+      "pixel_std": 56.8903132446042
+    },
+    {
+      "cell": "VAEc1_continuous_flow",
+      "tokenizer": "VAEc1",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc1_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "10176ee6fd642d6b92b8eedefa3f69df40e49b6d75736d30be15dce9878a5883",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc1_final/model.safetensors",
+      "fid192": 0.25903037190437317,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.247,
+      "decode_time_s": 0.005,
+      "pixel_mean": 120.36186218261719,
+      "pixel_std": 57.198550556510384
+    },
+    {
+      "cell": "VAEc2_diffusion",
+      "tokenizer": "VAEc2",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc2_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "a4e224afe727a1c8dc4af3d62a5f6003a9c656dfd431d27d334599c76bf01662",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc2_final/model.safetensors",
+      "fid192": 0.143630251288414,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 14.452,
+      "decode_time_s": 0.066,
+      "pixel_mean": 122.931640625,
+      "pixel_std": 58.95546473701295
+    },
+    {
+      "cell": "VAEc2_continuous_flow",
+      "tokenizer": "VAEc2",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc2_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "df2ae48de0cfeaa91aec81da02419035bfa1d0639a027ac2c344237d6b17bb99",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc2_final/model.safetensors",
+      "fid192": 0.18027731776237488,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.7,
+      "decode_time_s": 0.015,
+      "pixel_mean": 117.568115234375,
+      "pixel_std": 58.36672816136015
+    },
+    {
+      "cell": "VAEc4_diffusion",
+      "tokenizer": "VAEc4",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc4_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "bdcb1d02fcd2dc850579846fb471a4dc35096bc7730755ec0882720b4047e994",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc4_final/model.safetensors",
+      "fid192": 0.4110296070575714,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 14.136,
+      "decode_time_s": 0.066,
+      "pixel_mean": 122.62059020996094,
+      "pixel_std": 58.1319905300988
+    },
+    {
+      "cell": "VAEc4_continuous_flow",
+      "tokenizer": "VAEc4",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc4_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "68d22c5c59a413eb577e832ce5c4033b14d3e8cdf692150d7011036a378c7cdb",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc4_final/model.safetensors",
+      "fid192": 0.13151466846466064,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.464,
+      "decode_time_s": 0.015,
+      "pixel_mean": 125.36470031738281,
+      "pixel_std": 57.70981514917999
+    },
+    {
+      "cell": "VAEc8_diffusion",
+      "tokenizer": "VAEc8",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc8_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "841c0a9c5271a280cdf97fd165ceaac205c27c39f58f35553291a62aea43646d",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc8_final/model.safetensors",
+      "fid192": 1.613240361213684,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 12.822,
+      "decode_time_s": 0.007,
+      "pixel_mean": 139.85385131835938,
+      "pixel_std": 60.38910849030859
+    },
+    {
+      "cell": "VAEc8_continuous_flow",
+      "tokenizer": "VAEc8",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc8_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "aaa64b6d7c65ec15990033ca86617da7713d9341088b7f3fc3f7e987b1e7d189",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc8_final/model.safetensors",
+      "fid192": 0.3187290132045746,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.277,
+      "decode_time_s": 0.006,
+      "pixel_mean": 123.8162841796875,
+      "pixel_std": 63.77744292679481
+    },
+    {
+      "cell": "VAEc16_diffusion",
+      "tokenizer": "VAEc16",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc16_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "c3150024c895d3086e669f5c066e0f27582602fe417aa26ae5f7bdb7262b0511",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc16_final/model.safetensors",
+      "fid192": 0.6552777290344238,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 14.839,
+      "decode_time_s": 0.015,
+      "pixel_mean": 126.318603515625,
+      "pixel_std": 56.16718018109102
+    },
+    {
+      "cell": "VAEc16_continuous_flow",
+      "tokenizer": "VAEc16",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAEc16_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "a2d4daac9b69f16c1ef4e96b642a6a0cfc5416d9c1911f53f102cb452a144d06",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAEc16_final/model.safetensors",
+      "fid192": 0.1103295087814331,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.717,
+      "decode_time_s": 0.005,
+      "pixel_mean": 127.08099365234375,
+      "pixel_std": 53.55244343711051
+    },
+    {
+      "cell": "VAE1e5_diffusion",
+      "tokenizer": "VAE1e5",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAE1e5_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "05b9d460ba4e2549a66b104b84986174f2f2a7f2a97284ce20111b4a41d99beb",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAE1e5_final/model.safetensors",
+      "fid192": 0.2010287344455719,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 15.245,
+      "decode_time_s": 0.015,
+      "pixel_mean": 129.84605407714844,
+      "pixel_std": 62.687089832621126
+    },
+    {
+      "cell": "VAE1e5_continuous_flow",
+      "tokenizer": "VAE1e5",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAE1e5_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "6b1d56d7981e59920a35200ebe0d151ab96bf860428c5c3dfab32e0d4ac463e1",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAE1e5_final/model.safetensors",
+      "fid192": 0.1376473307609558,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.637,
+      "decode_time_s": 0.018,
+      "pixel_mean": 122.54464721679688,
+      "pixel_std": 59.12970627646374
+    },
+    {
+      "cell": "VAE1e7_diffusion",
+      "tokenizer": "VAE1e7",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAE1e7_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "9bf62c2c15b0ae7aa11948b5ef857808f8b2746350c5e5843db3eba69f210014",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAE1e7_final/model.safetensors",
+      "fid192": 0.09410979598760605,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 13.78,
+      "decode_time_s": 0.036,
+      "pixel_mean": 134.08615112304688,
+      "pixel_std": 61.14992541913071
+    },
+    {
+      "cell": "VAE1e7_continuous_flow",
+      "tokenizer": "VAE1e7",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_VAE1e7_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "fef1e46faed51a52ffb441bec50c3da085655c3dccd73913d3bffd86f2770e21",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_VAE1e7_final/model.safetensors",
+      "fid192": 0.10360492020845413,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.677,
+      "decode_time_s": 0.014,
+      "pixel_mean": 129.45660400390625,
+      "pixel_std": 60.57880717705289
+    },
+    {
+      "cell": "AEdisc_diffusion",
+      "tokenizer": "AEdisc",
+      "generator": "diffusion",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_timesteps": 1000,
+        "temperature": 0.9
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_AEdisc_diffusion/checkpoint_best.pt",
+      "checkpoint_sha256": "470196591b7ea0f09e3d66d419d8ba2d07f028b1215c7320cb3c16e324a57bfa",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_AEdisc_final/model.safetensors",
+      "fid192": 0.0866398960351944,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 14.348,
+      "decode_time_s": 0.007,
+      "pixel_mean": 122.06388854980469,
+      "pixel_std": 60.827259746256495
+    },
+    {
+      "cell": "AEdisc_continuous_flow",
+      "tokenizer": "AEdisc",
+      "generator": "continuous_flow",
+      "tuned": false,
+      "seed": 0,
+      "sampler": {
+        "num_steps": 100,
+        "base_std": 1.0
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_AEdisc_continuous_flow/checkpoint_best.pt",
+      "checkpoint_sha256": "dc5fd1ddfdc63bd01d2f6fb0ab2aa845f230768401d44411c10b40ae12e9fb6e",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_AEdisc_final/model.safetensors",
+      "fid192": 0.06850827485322952,
+      "fid192_source": "results/chestmnist_factorial/eval_results.json",
+      "generation_time_s": 1.5,
+      "decode_time_s": 0.014,
+      "pixel_mean": 128.1302947998047,
+      "pixel_std": 59.02797338584104
+    },
+    {
+      "cell": "LFQ1024_d3pm_tuned",
+      "tokenizer": "LFQ1024",
+      "generator": "d3pm",
+      "tuned": true,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.7,
+        "num_timesteps": 100
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_d3pm/checkpoint_best.pt",
+      "checkpoint_sha256": "57b35b9726d165e11fd87271cfb8b0b03c6aaa2ce0856d89df47a3e3ced9b6cd",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 0.0898,
+      "fid192_source": "results/tables/hp_revalidation.json test_fid_10k",
+      "generation_time_s": 1.754,
+      "decode_time_s": 0.01,
+      "pixel_mean": 124.80075073242188,
+      "pixel_std": 61.656667277738336
+    },
+    {
+      "cell": "LFQ1024_sedd_tuned",
+      "tokenizer": "LFQ1024",
+      "generator": "sedd",
+      "tuned": true,
+      "seed": 0,
+      "sampler": {
+        "temperature": 0.7,
+        "num_timesteps": 500
+      },
+      "checkpoint": "checkpoints/chestmnist_factorial/chestmnist_LFQ1024_sedd/checkpoint_best.pt",
+      "checkpoint_sha256": "56a865f3a6ac5e18d4b0566ce014b319401854c8ad2507af224aa715ba5eafde",
+      "tokenizer_checkpoint": "../medtokenizers/checkpoints/medmnist/chestmnist_LFQ1024_final/model.safetensors",
+      "fid192": 0.098,
+      "fid192_source": "results/tables/hp_revalidation.json test_fid_10k",
+      "generation_time_s": 8.385,
+      "decode_time_s": 0.005,
+      "pixel_mean": 129.96630859375,
+      "pixel_std": 62.11866449906145
+    }
+  ]
+}

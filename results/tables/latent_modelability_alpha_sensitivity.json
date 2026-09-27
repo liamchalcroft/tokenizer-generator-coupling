@@ -1,0 +1,261 @@
+{
+  "_description": "VQ-vs-rest rank-AUC (1.0 = the three VQ tokenizers all score on the same side of the six LFQ/FSQ ones) and Spearman against best observed FID-192, for each generator-free statistic at every smoothing constant in the grid, plus the validation-selected result. Derived from latent_modelability.json by scripts/modelability_alpha_sensitivity.py; alpha is never chosen against FID.",
+  "alpha_grid": [
+    "10",
+    "3",
+    "1",
+    "0.3",
+    "0.1",
+    "0.03",
+    "0.01",
+    "0.003",
+    "0.001"
+  ],
+  "alpha_independent": {
+    "psnr": {
+      "vq_vs_rest_auc": 0.6111111111111112,
+      "spearman_vs_best_fid": -0.033614632272640714
+    },
+    "marginal_entropy_norm": {
+      "vq_vs_rest_auc": 0.5,
+      "spearman_vs_best_fid": -0.19999999999999998
+    },
+    "per_pos_dispersion_norm": {
+      "vq_vs_rest_auc": 0.7222222222222222,
+      "spearman_vs_best_fid": 0.033333333333333326
+    }
+  },
+  "alpha_dependent": {
+    "predictive_gain_left": {
+      "per_alpha": {
+        "10": {
+          "vq_vs_rest_auc": 0.8333333333333334,
+          "spearman_vs_best_fid": 0.049999999999999996
+        },
+        "3": {
+          "vq_vs_rest_auc": 0.8888888888888888,
+          "spearman_vs_best_fid": 0.08333333333333333
+        },
+        "1": {
+          "vq_vs_rest_auc": 1.0,
+          "spearman_vs_best_fid": 0.049999999999999996
+        },
+        "0.3": {
+          "vq_vs_rest_auc": 0.7777777777777778,
+          "spearman_vs_best_fid": -0.033333333333333326
+        },
+        "0.1": {
+          "vq_vs_rest_auc": 0.7222222222222222,
+          "spearman_vs_best_fid": 0.11666666666666665
+        },
+        "0.03": {
+          "vq_vs_rest_auc": 0.6111111111111112,
+          "spearman_vs_best_fid": 0.2333333333333333
+        },
+        "0.01": {
+          "vq_vs_rest_auc": 0.6111111111111112,
+          "spearman_vs_best_fid": 0.2833333333333333
+        },
+        "0.003": {
+          "vq_vs_rest_auc": 0.5555555555555556,
+          "spearman_vs_best_fid": 0.2666666666666666
+        },
+        "0.001": {
+          "vq_vs_rest_auc": 0.5555555555555556,
+          "spearman_vs_best_fid": 0.2666666666666666
+        }
+      },
+      "validation_selected": {
+        "vq_vs_rest_auc": 1.0,
+        "spearman_vs_best_fid": 0.049999999999999996
+      },
+      "auc_min": 0.5555555555555556,
+      "auc_max": 1.0,
+      "alphas_with_auc_1": [
+        "1"
+      ]
+    },
+    "cond_entropy_left_norm": {
+      "per_alpha": {
+        "10": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": -0.06666666666666665
+        },
+        "3": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": -0.16666666666666666
+        },
+        "1": {
+          "vq_vs_rest_auc": 0.3888888888888889,
+          "spearman_vs_best_fid": -0.15
+        },
+        "0.3": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": -0.049999999999999996
+        },
+        "0.1": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": 0.049999999999999996
+        },
+        "0.03": {
+          "vq_vs_rest_auc": 0.5555555555555556,
+          "spearman_vs_best_fid": -0.016666666666666663
+        },
+        "0.01": {
+          "vq_vs_rest_auc": 0.5555555555555556,
+          "spearman_vs_best_fid": -0.11666666666666665
+        },
+        "0.003": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": -0.19999999999999998
+        },
+        "0.001": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": -0.19999999999999998
+        }
+      },
+      "validation_selected": {
+        "vq_vs_rest_auc": 0.4444444444444444,
+        "spearman_vs_best_fid": -0.16666666666666666
+      },
+      "auc_min": 0.3888888888888889,
+      "auc_max": 0.5555555555555556,
+      "alphas_with_auc_1": []
+    },
+    "predictive_gain_up": {
+      "per_alpha": {
+        "10": {
+          "vq_vs_rest_auc": 0.8333333333333334,
+          "spearman_vs_best_fid": 0.16666666666666666
+        },
+        "3": {
+          "vq_vs_rest_auc": 0.8888888888888888,
+          "spearman_vs_best_fid": 0.18333333333333332
+        },
+        "1": {
+          "vq_vs_rest_auc": 1.0,
+          "spearman_vs_best_fid": 0.2833333333333333
+        },
+        "0.3": {
+          "vq_vs_rest_auc": 1.0,
+          "spearman_vs_best_fid": 0.08333333333333333
+        },
+        "0.1": {
+          "vq_vs_rest_auc": 0.7777777777777778,
+          "spearman_vs_best_fid": -0.016666666666666663
+        },
+        "0.03": {
+          "vq_vs_rest_auc": 0.6111111111111112,
+          "spearman_vs_best_fid": 0.2333333333333333
+        },
+        "0.01": {
+          "vq_vs_rest_auc": 0.6111111111111112,
+          "spearman_vs_best_fid": 0.2833333333333333
+        },
+        "0.003": {
+          "vq_vs_rest_auc": 0.6111111111111112,
+          "spearman_vs_best_fid": 0.2833333333333333
+        },
+        "0.001": {
+          "vq_vs_rest_auc": 0.5555555555555556,
+          "spearman_vs_best_fid": 0.3
+        }
+      },
+      "validation_selected": {
+        "vq_vs_rest_auc": 1.0,
+        "spearman_vs_best_fid": 0.16666666666666666
+      },
+      "auc_min": 0.5555555555555556,
+      "auc_max": 1.0,
+      "alphas_with_auc_1": [
+        "1",
+        "0.3"
+      ]
+    },
+    "cond_entropy_up_norm": {
+      "per_alpha": {
+        "10": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": -0.16666666666666666
+        },
+        "3": {
+          "vq_vs_rest_auc": 0.3888888888888889,
+          "spearman_vs_best_fid": -0.21666666666666665
+        },
+        "1": {
+          "vq_vs_rest_auc": 0.3333333333333333,
+          "spearman_vs_best_fid": -0.19999999999999998
+        },
+        "0.3": {
+          "vq_vs_rest_auc": 0.3333333333333333,
+          "spearman_vs_best_fid": -0.19999999999999998
+        },
+        "0.1": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": -0.11666666666666665
+        },
+        "0.03": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": 0.016666666666666663
+        },
+        "0.01": {
+          "vq_vs_rest_auc": 0.5,
+          "spearman_vs_best_fid": -0.16666666666666666
+        },
+        "0.003": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": -0.24999999999999997
+        },
+        "0.001": {
+          "vq_vs_rest_auc": 0.4444444444444444,
+          "spearman_vs_best_fid": -0.24999999999999997
+        }
+      },
+      "validation_selected": {
+        "vq_vs_rest_auc": 0.3333333333333333,
+        "spearman_vs_best_fid": -0.19999999999999998
+      },
+      "auc_min": 0.3333333333333333,
+      "auc_max": 0.5,
+      "alphas_with_auc_1": []
+    }
+  },
+  "validation_selected_alpha": {
+    "VQ1024": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "VQ2048": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "VQ4096": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "LFQ1024": {
+      "left": 3.0,
+      "up": 3.0
+    },
+    "LFQ2048": {
+      "left": 3.0,
+      "up": 1.0
+    },
+    "LFQ4096": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "FSQ1024": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "FSQ2048": {
+      "left": 1.0,
+      "up": 1.0
+    },
+    "FSQ4096": {
+      "left": 0.3,
+      "up": 0.3
+    }
+  }
+}

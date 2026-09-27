@@ -1,0 +1,303 @@
+{
+  "discrete": [
+    {
+      "tokenizer": "VQ1024",
+      "vocab": 1024,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 9.973197652255031,
+      "max_entropy_bits": 10.0,
+      "normalised_entropy": 0.9973197652255031,
+      "per_pos_entropy_min": 8.072874735126796,
+      "per_pos_entropy_max": 9.706339358463076,
+      "per_pos_entropy_mean": 9.139225735059902,
+      "per_pos_entropy_std": 0.3859703568730135
+    },
+    {
+      "tokenizer": "VQ2048",
+      "vocab": 2048,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 10.971890014226485,
+      "max_entropy_bits": 11.0,
+      "normalised_entropy": 0.9974445467478623,
+      "per_pos_entropy_min": 9.332345223118459,
+      "per_pos_entropy_max": 10.689972340471273,
+      "per_pos_entropy_mean": 10.310027960732864,
+      "per_pos_entropy_std": 0.2625182627414265
+    },
+    {
+      "tokenizer": "VQ4096",
+      "vocab": 4096,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 11.973885465099666,
+      "max_entropy_bits": 12.0,
+      "normalised_entropy": 0.9978237887583056,
+      "per_pos_entropy_min": 9.951982418873731,
+      "per_pos_entropy_max": 11.561072673640634,
+      "per_pos_entropy_mean": 11.10954593429786,
+      "per_pos_entropy_std": 0.3224888662287928
+    },
+    {
+      "tokenizer": "LFQ1024",
+      "vocab": 1024,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 9.994792343458858,
+      "max_entropy_bits": 10.0,
+      "normalised_entropy": 0.9994792343458858,
+      "per_pos_entropy_min": 9.372052558856979,
+      "per_pos_entropy_max": 9.861273934616161,
+      "per_pos_entropy_mean": 9.68675174486767,
+      "per_pos_entropy_std": 0.10125489031143795
+    },
+    {
+      "tokenizer": "LFQ2048",
+      "vocab": 2048,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 10.992055768771788,
+      "max_entropy_bits": 11.0,
+      "normalised_entropy": 0.9992777971610717,
+      "per_pos_entropy_min": 10.221489884973696,
+      "per_pos_entropy_max": 10.821505759527504,
+      "per_pos_entropy_mean": 10.610554650877534,
+      "per_pos_entropy_std": 0.12307975593692595
+    },
+    {
+      "tokenizer": "LFQ",
+      "vocab": 4096,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 11.98244962149382,
+      "max_entropy_bits": 12.0,
+      "normalised_entropy": 0.9985374684578184,
+      "per_pos_entropy_min": 11.030113037029462,
+      "per_pos_entropy_max": 11.713035226454515,
+      "per_pos_entropy_mean": 11.513838008706458,
+      "per_pos_entropy_std": 0.14283955223861497
+    },
+    {
+      "tokenizer": "FSQ1024",
+      "vocab": 1024,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 1024,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 9.591093241354915,
+      "max_entropy_bits": 10.0,
+      "normalised_entropy": 0.9591093241354915,
+      "per_pos_entropy_min": 8.146829304689305,
+      "per_pos_entropy_max": 9.441743738195965,
+      "per_pos_entropy_mean": 9.07921478931247,
+      "per_pos_entropy_std": 0.28305339109784033
+    },
+    {
+      "tokenizer": "FSQ2048",
+      "vocab": 2048,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 2048,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 10.693720759150732,
+      "max_entropy_bits": 11.0,
+      "normalised_entropy": 0.9721564326500666,
+      "per_pos_entropy_min": 9.452119587269053,
+      "per_pos_entropy_max": 10.519617210912884,
+      "per_pos_entropy_mean": 10.129933617247428,
+      "per_pos_entropy_std": 0.28688259578844444
+    },
+    {
+      "tokenizer": "FSQ4096",
+      "vocab": 4096,
+      "n_samples": 22433,
+      "spatial": [
+        8,
+        8
+      ],
+      "codebook_used": 4096,
+      "codebook_utilization": 1.0,
+      "overall_entropy_bits": 11.36743614829781,
+      "max_entropy_bits": 12.0,
+      "normalised_entropy": 0.9472863456914841,
+      "per_pos_entropy_min": 9.586698590298909,
+      "per_pos_entropy_max": 11.178190072155072,
+      "per_pos_entropy_mean": 10.57406254772221,
+      "per_pos_entropy_std": 0.3445536796833465
+    }
+  ],
+  "continuous": [
+    {
+      "tokenizer": "VAEc1",
+      "n_samples": 22433,
+      "shape": [
+        1,
+        8,
+        8
+      ],
+      "channels": 1,
+      "mean": -0.006009952165186405,
+      "std": 0.9171248078346252,
+      "min": -4.41015625,
+      "max": 4.94921875,
+      "abs_mean": 0.7366021275520325
+    },
+    {
+      "tokenizer": "VAEc2",
+      "n_samples": 22433,
+      "shape": [
+        2,
+        8,
+        8
+      ],
+      "channels": 2,
+      "mean": 0.05119617283344269,
+      "std": 1.0156099796295166,
+      "min": -6.3515625,
+      "max": 6.60546875,
+      "abs_mean": 0.8126768469810486
+    },
+    {
+      "tokenizer": "VAEc4",
+      "n_samples": 22433,
+      "shape": [
+        4,
+        8,
+        8
+      ],
+      "channels": 4,
+      "mean": 0.0003296863869763911,
+      "std": 0.9596779346466064,
+      "min": -7.44140625,
+      "max": 6.9296875,
+      "abs_mean": 0.7583429217338562
+    },
+    {
+      "tokenizer": "VAEc8",
+      "n_samples": 22433,
+      "shape": [
+        8,
+        8,
+        8
+      ],
+      "channels": 8,
+      "mean": -0.0009915702976286411,
+      "std": 0.929899275302887,
+      "min": -7.6796875,
+      "max": 6.73046875,
+      "abs_mean": 0.7239415049552917
+    },
+    {
+      "tokenizer": "VAEc16",
+      "n_samples": 22433,
+      "shape": [
+        16,
+        8,
+        8
+      ],
+      "channels": 16,
+      "mean": 0.01591300033032894,
+      "std": 0.6226125359535217,
+      "min": -6.54296875,
+      "max": 7.85546875,
+      "abs_mean": 0.3503054976463318
+    },
+    {
+      "tokenizer": "VAE",
+      "n_samples": 22433,
+      "shape": [
+        4,
+        8,
+        8
+      ],
+      "channels": 4,
+      "mean": 0.00026072439504787326,
+      "std": 0.9675226211547852,
+      "min": -7.00390625,
+      "max": 6.94921875,
+      "abs_mean": 0.7642320394515991
+    },
+    {
+      "tokenizer": "VAE1e5",
+      "n_samples": 22433,
+      "shape": [
+        4,
+        8,
+        8
+      ],
+      "channels": 4,
+      "mean": -0.002384657971560955,
+      "std": 0.5408512353897095,
+      "min": -5.28125,
+      "max": 4.9765625,
+      "abs_mean": 0.27317696809768677
+    },
+    {
+      "tokenizer": "VAE1e7",
+      "n_samples": 22433,
+      "shape": [
+        4,
+        8,
+        8
+      ],
+      "channels": 4,
+      "mean": 0.054788075387477875,
+      "std": 0.9637374877929688,
+      "min": -6.69921875,
+      "max": 6.2734375,
+      "abs_mean": 0.757104754447937
+    },
+    {
+      "tokenizer": "AEdisc",
+      "n_samples": 22433,
+      "shape": [
+        4,
+        8,
+        8
+      ],
+      "channels": 4,
+      "mean": -0.09504035860300064,
+      "std": 2.0316336154937744,
+      "min": -10.890625,
+      "max": 11.21875,
+      "abs_mean": 1.597376823425293
+    }
+  ]
+}

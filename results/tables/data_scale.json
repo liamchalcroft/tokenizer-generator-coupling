@@ -1,0 +1,30 @@
+{
+  "_description": "Training-set-size control: default-config FID-192 (10K samples, test split) of the AR generator retrained on random ChestMNIST subsets of 4,700, 20,000 and 78,468 training images (scripts/subsample_tokens.py --seed 0, scripts/run_data_scale.sh). Keys under 'seeds' are training-set sizes; mean and std are over sizes. The VQ-1024 row was evaluated on an NVIDIA RTX A6000 and the LFQ-1024 row on an NVIDIA L40S.",
+  "cells": {
+    "chestmnist_LFQ1024_transformer": {
+      "default_config": true,
+      "seeds": {
+        "n4700": 0.9457,
+        "n20000": 0.366,
+        "n78468": 0.3404
+      },
+      "eval_time_s": {
+        "n4700": 79.0,
+        "n20000": 76.0,
+        "n78468": 76.0
+      },
+      "mean": 0.5507,
+      "std": 0.2795
+    },
+    "chestmnist_VQ1024_transformer": {
+      "default_config": true,
+      "seeds": {
+        "n4700": 1.1134,
+        "n20000": 0.4925,
+        "n78468": 0.5183
+      },
+      "mean": 0.7081,
+      "std": 0.2868
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "dataset": "chestmnist",
+  "num_cells": 54,
+  "design": "balanced 3x3x6 VQ/LFQ/FSQ x 1024/2048/4096 x six discrete generators",
+  "response": "log(FID-192)",
+  "method": "descriptive orthogonal fixed-effect corrected sum-of-squares decomposition",
+  "inferential": false,
+  "decomposition": {
+    "quantizer": {
+      "sum_squares": 4.199916750764498,
+      "fraction": 0.1013876241355028
+    },
+    "vocabulary": {
+      "sum_squares": 1.8354823789529153,
+      "fraction": 0.0443092586325056
+    },
+    "generator": {
+      "sum_squares": 24.637902211250122,
+      "fraction": 0.5947685435495361
+    },
+    "quantizer:vocabulary": {
+      "sum_squares": 0.41369577302240096,
+      "fraction": 0.009986776888853
+    },
+    "quantizer:generator": {
+      "sum_squares": 3.4952776179942013,
+      "fraction": 0.08437736136506166
+    },
+    "vocabulary:generator": {
+      "sum_squares": 6.211543055749667,
+      "fraction": 0.1499490656626001
+    },
+    "three_way_residual": {
+      "sum_squares": 0.6305353971419194,
+      "fraction": 0.015221369765940768
+    }
+  },
+  "mean_ranks": {
+    "quantizer": {
+      "VQ": 32.05555555555556,
+      "LFQ": 20.305555555555557,
+      "FSQ": 30.13888888888889
+    },
+    "vocabulary": {
+      "1024": 22.88888888888889,
+      "2048": 27.63888888888889,
+      "4096": 31.97222222222222
+    },
+    "generator": {
+      "AR": 5.888888888888889,
+      "MaskGIT": 26.944444444444443,
+      "DFM": 34.333333333333336,
+      "D3PM": 27.333333333333332,
+      "SEDD": 27.22222222222222,
+      "BFN": 43.27777777777778
+    }
+  }
+}

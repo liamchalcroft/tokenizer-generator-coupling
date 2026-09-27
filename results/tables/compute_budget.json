@@ -1,0 +1,108 @@
+{
+  "_description": "Single NVIDIA A6000 (48 GB). MEASURED = recorded job wall-clocks (generation_time_s / sweep time_s). ESTIMATED training = wall-clock between consecutive checkpoint writes (upper bound; includes per-run overhead, first run of each batch unmeasured). ChestMNIST unless noted.",
+  "measured_gpu_hours": {
+    "generation_eval": {
+      "chestmnist": {
+        "gpu_hours": 70.6,
+        "n_cells": 72
+      },
+      "pneumoniamnist": {
+        "gpu_hours": 6.6,
+        "n_cells": 6
+      },
+      "organamnist": {
+        "gpu_hours": 3.4,
+        "n_cells": 6
+      },
+      "total": 80.6
+    },
+    "hp_sweep": {
+      "chestmnist_2k_screening": 28.2,
+      "lfq1024_10k_validation": 4.2,
+      "val_reselection_2k_screen": 17.8,
+      "val_reselection_10k_finals": 3.2,
+      "total": 53.4
+    },
+    "measured_total": 134.0
+  },
+  "estimated_training_gpu_hours": {
+    "method": "wall-clock between consecutive checkpoint writes; per-run, batch-idle dropped (cap tok 24h / gen 12h)",
+    "tokenizers_by_family": {
+      "AE": {
+        "n_runs": 2,
+        "median_h": 5.85,
+        "sum_h": 11.7
+      },
+      "FSQ": {
+        "n_runs": 3,
+        "median_h": 9.63,
+        "sum_h": 31.6
+      },
+      "LFQ": {
+        "n_runs": 3,
+        "median_h": 6.31,
+        "sum_h": 19.4
+      },
+      "VAE": {
+        "n_runs": 8,
+        "median_h": 8.89,
+        "sum_h": 66.5
+      },
+      "VQ": {
+        "n_runs": 3,
+        "median_h": 9.44,
+        "sum_h": 27.5
+      }
+    },
+    "tokenizers_total": 156.6,
+    "generators_by_architecture": {
+      "bayesian_flow": {
+        "n_runs": 9,
+        "median_h": 2.71,
+        "sum_h": 26.7
+      },
+      "continuous_flow": {
+        "n_runs": 8,
+        "median_h": 8.39,
+        "sum_h": 60.9
+      },
+      "d3pm": {
+        "n_runs": 9,
+        "median_h": 2.64,
+        "sum_h": 29.9
+      },
+      "diffusion": {
+        "n_runs": 6,
+        "median_h": 8.45,
+        "sum_h": 48.0
+      },
+      "flow": {
+        "n_runs": 9,
+        "median_h": 2.14,
+        "sum_h": 24.0
+      },
+      "maskgit": {
+        "n_runs": 9,
+        "median_h": 2.12,
+        "sum_h": 23.5
+      },
+      "sedd": {
+        "n_runs": 9,
+        "median_h": 2.64,
+        "sum_h": 28.1
+      },
+      "transformer": {
+        "n_runs": 8,
+        "median_h": 2.81,
+        "sum_h": 24.4
+      }
+    },
+    "generators_total": 265.5,
+    "estimated_total": 422.1
+  },
+  "grand_total_a6000_hours": {
+    "measured": 134.0,
+    "estimated_training": 422.1,
+    "approx_total": 556.1
+  }
+}

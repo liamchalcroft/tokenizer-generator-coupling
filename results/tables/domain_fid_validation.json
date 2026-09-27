@@ -1,0 +1,59 @@
+{
+  "classifier": "checkpoints/chestmnist_classifier_real.pt",
+  "classifier_test_mean_auc": 0.7607093451475615,
+  "classifier_best_val_mean_auc": 0.7694164451847687,
+  "feature_dim": 512,
+  "num_samples": 10000,
+  "rows": [
+    {
+      "cell": "chestmnist_LFQ1024_transformer",
+      "fid192": 0.33,
+      "domain_fid": 17.07875102312198,
+      "num_real": 22433,
+      "num_gen": 10000
+    },
+    {
+      "cell": "chestmnist_FSQ1024_transformer",
+      "fid192": 0.38509857654571533,
+      "domain_fid": 16.525313026057376,
+      "num_real": 22433,
+      "num_gen": 10000
+    },
+    {
+      "cell": "chestmnist_VQ1024_transformer",
+      "fid192": 0.5183159112930298,
+      "domain_fid": 16.93423832312132,
+      "num_real": 22433,
+      "num_gen": 10000
+    },
+    {
+      "cell": "chestmnist_LFQ1024_d3pm",
+      "fid192": 0.44,
+      "domain_fid": 24.70163493598423,
+      "num_real": 22433,
+      "num_gen": 10000
+    },
+    {
+      "cell": "chestmnist_VAEc2_diffusion",
+      "fid192": 0.143630251288414,
+      "domain_fid": 7.669369151993266,
+      "num_real": 22433,
+      "num_gen": 10000
+    },
+    {
+      "cell": "chestmnist_AEdisc_continuous_flow",
+      "fid192": 0.06850827485322952,
+      "domain_fid": 0.7355706893787897,
+      "num_real": 22433,
+      "num_gen": 10000
+    }
+  ],
+  "spearman_rho": 0.7142857142857143,
+  "time_s": 7745.6812126636505,
+  "spearman_inference": {
+    "n_cells": 6,
+    "spearman_rho": 0.7143,
+    "exact_permutation_p_two_sided": 0.1361,
+    "n_permutations": 720
+  }
+}

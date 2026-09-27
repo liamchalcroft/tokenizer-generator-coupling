@@ -1,0 +1,650 @@
+{
+  "chestmnist_FSQ1024_bayesian_flow": {
+    "fid": 7.59897518157959,
+    "is_mean": 2.5385427474975586,
+    "is_std": 0.047129493206739426,
+    "generation_time_s": 10188.914013624191,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_FSQ1024_d3pm": {
+    "fid": 1.2082065343856812,
+    "is_mean": 2.9018642902374268,
+    "is_std": 0.04188178852200508,
+    "generation_time_s": 7985.757550954819,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "d3pm"
+  },
+  "chestmnist_FSQ1024_flow": {
+    "fid": 3.0188894271850586,
+    "is_mean": 2.4527881145477295,
+    "is_std": 0.03208661824464798,
+    "generation_time_s": 867.9237687587738,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "flow"
+  },
+  "chestmnist_FSQ1024_maskgit": {
+    "fid": 1.1524759531021118,
+    "is_mean": 2.4141547679901123,
+    "is_std": 0.043549053370952606,
+    "generation_time_s": 142.43266201019287,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "maskgit"
+  },
+  "chestmnist_FSQ1024_sedd": {
+    "fid": 1.0496118068695068,
+    "is_mean": 2.879089117050171,
+    "is_std": 0.06809588521718979,
+    "generation_time_s": 7928.390081644058,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "sedd"
+  },
+  "chestmnist_FSQ1024_transformer": {
+    "fid": 0.38509857654571533,
+    "is_mean": 2.755751848220825,
+    "is_std": 0.0321122407913208,
+    "generation_time_s": 151.38378310203552,
+    "num_samples": 10000,
+    "tokenizer": "FSQ1024",
+    "model": "transformer"
+  },
+  "chestmnist_FSQ2048_bayesian_flow": {
+    "fid": 4.827630996704102,
+    "is_mean": 2.523724317550659,
+    "is_std": 0.04883229732513428,
+    "generation_time_s": 9264.212587356567,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_FSQ2048_d3pm": {
+    "fid": 2.504476308822632,
+    "is_mean": 2.7364304065704346,
+    "is_std": 0.04951699078083038,
+    "generation_time_s": 8226.12547492981,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "d3pm"
+  },
+  "chestmnist_FSQ2048_flow": {
+    "fid": 1.8564873933792114,
+    "is_mean": 2.370015859603882,
+    "is_std": 0.0467984639108181,
+    "generation_time_s": 867.8235659599304,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "flow"
+  },
+  "chestmnist_FSQ2048_maskgit": {
+    "fid": 1.4775182008743286,
+    "is_mean": 2.236880302429199,
+    "is_std": 0.03698119521141052,
+    "generation_time_s": 147.2388813495636,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "maskgit"
+  },
+  "chestmnist_FSQ2048_sedd": {
+    "fid": 2.4618301391601562,
+    "is_mean": 2.7520053386688232,
+    "is_std": 0.055940259248018265,
+    "generation_time_s": 8226.509842634201,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "sedd"
+  },
+  "chestmnist_FSQ2048_transformer": {
+    "fid": 0.7280181050300598,
+    "is_mean": 2.5469534397125244,
+    "is_std": 0.04182656854391098,
+    "generation_time_s": 151.0360927581787,
+    "num_samples": 10000,
+    "tokenizer": "FSQ2048",
+    "model": "transformer"
+  },
+  "chestmnist_FSQ4096_bayesian_flow": {
+    "fid": 8.456082344055176,
+    "is_mean": 2.38804030418396,
+    "is_std": 0.03276506066322327,
+    "generation_time_s": 10453.257879972458,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_FSQ4096_d3pm": {
+    "fid": 7.399479389190674,
+    "is_mean": 2.5053157806396484,
+    "is_std": 0.033426523208618164,
+    "generation_time_s": 8677.79657125473,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "d3pm"
+  },
+  "chestmnist_FSQ4096_flow": {
+    "fid": 2.69,
+    "is_mean": 2.4,
+    "is_std": 0.03,
+    "generation_time_s": 890.0,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "flow"
+  },
+  "chestmnist_FSQ4096_maskgit": {
+    "fid": 1.46,
+    "is_mean": 2.38,
+    "is_std": 0.05,
+    "generation_time_s": 149.0,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "maskgit"
+  },
+  "chestmnist_FSQ4096_sedd": {
+    "fid": 7.34,
+    "is_mean": 2.49,
+    "is_std": 0.05,
+    "generation_time_s": 8671.0,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "sedd"
+  },
+  "chestmnist_FSQ4096_transformer": {
+    "fid": 0.37,
+    "is_mean": 2.63,
+    "is_std": 0.05,
+    "generation_time_s": 149.0,
+    "num_samples": 10000,
+    "tokenizer": "FSQ4096",
+    "model": "transformer"
+  },
+  "chestmnist_LFQ1024_bayesian_flow": {
+    "fid": 2.27,
+    "is_mean": 2.6,
+    "is_std": 0.05,
+    "generation_time_s": 8614.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_LFQ1024_d3pm": {
+    "fid": 0.44,
+    "is_mean": 2.8,
+    "is_std": 0.05,
+    "generation_time_s": 7778.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "d3pm"
+  },
+  "chestmnist_LFQ1024_flow": {
+    "fid": 1.77,
+    "is_mean": 2.55,
+    "is_std": 0.03,
+    "generation_time_s": 857.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "flow"
+  },
+  "chestmnist_LFQ1024_maskgit": {
+    "fid": 1.91,
+    "is_mean": 2.45,
+    "is_std": 0.05,
+    "generation_time_s": 141.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "maskgit"
+  },
+  "chestmnist_LFQ1024_sedd": {
+    "fid": 0.41,
+    "is_mean": 2.77,
+    "is_std": 0.04,
+    "generation_time_s": 7796.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "sedd"
+  },
+  "chestmnist_LFQ1024_transformer": {
+    "fid": 0.33,
+    "is_mean": 2.71,
+    "is_std": 0.04,
+    "generation_time_s": 150.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ1024",
+    "model": "transformer"
+  },
+  "chestmnist_LFQ2048_bayesian_flow": {
+    "fid": 1.46,
+    "is_mean": 2.39,
+    "is_std": 0.04,
+    "generation_time_s": 9138.0,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_AEdisc_continuous_flow": {
+    "fid": 0.06850827485322952,
+    "is_mean": 2.572052478790283,
+    "is_std": 0.032743245363235474,
+    "generation_time_s": 660.674646615982,
+    "num_samples": 10000,
+    "tokenizer": "AEdisc",
+    "model": "continuous_flow"
+  },
+  "chestmnist_AEdisc_diffusion": {
+    "fid": 0.0866398960351944,
+    "is_mean": 2.3755853176116943,
+    "is_std": 0.02335277944803238,
+    "generation_time_s": 4114.729748249054,
+    "num_samples": 10000,
+    "tokenizer": "AEdisc",
+    "model": "diffusion"
+  },
+  "chestmnist_LFQ2048_d3pm": {
+    "fid": 0.7359216213226318,
+    "is_mean": 2.655578851699829,
+    "is_std": 0.03607580438256264,
+    "generation_time_s": 4268.592107057571,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "d3pm"
+  },
+  "chestmnist_LFQ2048_flow": {
+    "fid": 1.327580213546753,
+    "is_mean": 2.3552186489105225,
+    "is_std": 0.02594122290611267,
+    "generation_time_s": 472.3981132507324,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "flow"
+  },
+  "chestmnist_LFQ2048_maskgit": {
+    "fid": 3.3967463970184326,
+    "is_mean": 2.258812665939331,
+    "is_std": 0.03767967224121094,
+    "generation_time_s": 75.03535461425781,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "maskgit"
+  },
+  "chestmnist_LFQ2048_sedd": {
+    "fid": 1.0207842588424683,
+    "is_mean": 2.4932780265808105,
+    "is_std": 0.04848339036107063,
+    "generation_time_s": 4231.30846786499,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "sedd"
+  },
+  "chestmnist_LFQ2048_transformer": {
+    "fid": 0.4498131573200226,
+    "is_mean": 2.6902451515197754,
+    "is_std": 0.055196814239025116,
+    "generation_time_s": 91.27005791664124,
+    "num_samples": 10000,
+    "tokenizer": "LFQ2048",
+    "model": "transformer"
+  },
+  "chestmnist_LFQ4096_bayesian_flow": {
+    "fid": 2.4116482734680176,
+    "is_mean": 2.562530994415283,
+    "is_std": 0.045589741319417953,
+    "generation_time_s": 5738.406539678574,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_LFQ4096_d3pm": {
+    "fid": 1.91816246509552,
+    "is_mean": 2.656160354614258,
+    "is_std": 0.04239916801452637,
+    "generation_time_s": 6773.134459257126,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "d3pm"
+  },
+  "chestmnist_LFQ4096_flow": {
+    "fid": 2.21237850189209,
+    "is_mean": 2.5678365230560303,
+    "is_std": 0.04380173608660698,
+    "generation_time_s": 655.6659638881683,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "flow"
+  },
+  "chestmnist_LFQ4096_maskgit": {
+    "fid": 1.2652175426483154,
+    "is_mean": 2.4804277420043945,
+    "is_std": 0.04731118306517601,
+    "generation_time_s": 127.03077936172485,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "maskgit"
+  },
+  "chestmnist_LFQ4096_sedd": {
+    "fid": 2.0764687061309814,
+    "is_mean": 2.566115140914917,
+    "is_std": 0.024265512824058533,
+    "generation_time_s": 6735.827444791794,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "sedd"
+  },
+  "chestmnist_LFQ4096_transformer": {
+    "fid": 0.409506231546402,
+    "is_mean": 2.6301562786102295,
+    "is_std": 0.06364108622074127,
+    "generation_time_s": 139.56474614143372,
+    "num_samples": 10000,
+    "tokenizer": "LFQ4096",
+    "model": "transformer"
+  },
+  "chestmnist_VAE1e5_continuous_flow": {
+    "fid": 0.1376473307609558,
+    "is_mean": 2.5725369453430176,
+    "is_std": 0.04321865364909172,
+    "generation_time_s": 667.9648389816284,
+    "num_samples": 10000,
+    "tokenizer": "VAE1e5",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAE1e5_diffusion": {
+    "fid": 0.2010287344455719,
+    "is_mean": 2.469515800476074,
+    "is_std": 0.04612302780151367,
+    "generation_time_s": 5425.43396282196,
+    "num_samples": 10000,
+    "tokenizer": "VAE1e5",
+    "model": "diffusion"
+  },
+  "chestmnist_VAE1e7_continuous_flow": {
+    "fid": 0.10360492020845413,
+    "is_mean": 2.5779762268066406,
+    "is_std": 0.04017183557152748,
+    "generation_time_s": 591.3095343112946,
+    "num_samples": 10000,
+    "tokenizer": "VAE1e7",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAE1e7_diffusion": {
+    "fid": 0.09410979598760605,
+    "is_mean": 2.3860042095184326,
+    "is_std": 0.02757195197045803,
+    "generation_time_s": 4806.489688634872,
+    "num_samples": 10000,
+    "tokenizer": "VAE1e7",
+    "model": "diffusion"
+  },
+  "chestmnist_VAE_continuous_flow": {
+    "fid": 0.38910049200057983,
+    "is_mean": 2.443265914916992,
+    "is_std": 0.020530441775918007,
+    "generation_time_s": 472.5209090709686,
+    "num_samples": 10000,
+    "tokenizer": "VAE",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAE_diffusion": {
+    "fid": 0.66920405626297,
+    "is_mean": 2.2679412364959717,
+    "is_std": 0.024057619273662567,
+    "generation_time_s": 5032.523995399475,
+    "num_samples": 10000,
+    "tokenizer": "VAE",
+    "model": "diffusion"
+  },
+  "chestmnist_VAEc1_continuous_flow": {
+    "fid": 0.25903037190437317,
+    "is_mean": 2.3741774559020996,
+    "is_std": 0.05066702142357826,
+    "generation_time_s": 431.6717584133148,
+    "num_samples": 10000,
+    "tokenizer": "VAEc1",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAEc1_diffusion": {
+    "fid": 0.2156551480293274,
+    "is_mean": 2.3095874786376953,
+    "is_std": 0.04086017981171608,
+    "generation_time_s": 5048.868000030518,
+    "num_samples": 10000,
+    "tokenizer": "VAEc1",
+    "model": "diffusion"
+  },
+  "chestmnist_VAEc2_continuous_flow": {
+    "fid": 0.18027731776237488,
+    "is_mean": 2.4911949634552,
+    "is_std": 0.04448450729250908,
+    "generation_time_s": 427.068238735199,
+    "num_samples": 10000,
+    "tokenizer": "VAEc2",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAEc2_diffusion": {
+    "fid": 0.143630251288414,
+    "is_mean": 2.377528190612793,
+    "is_std": 0.04602322727441788,
+    "generation_time_s": 5027.527935504913,
+    "num_samples": 10000,
+    "tokenizer": "VAEc2",
+    "model": "diffusion"
+  },
+  "chestmnist_VAEc4_continuous_flow": {
+    "fid": 0.13151466846466064,
+    "is_mean": 2.4734883308410645,
+    "is_std": 0.03297048807144165,
+    "generation_time_s": 418.54282879829407,
+    "num_samples": 10000,
+    "tokenizer": "VAEc4",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAEc4_diffusion": {
+    "fid": 0.4110296070575714,
+    "is_mean": 2.307516574859619,
+    "is_std": 0.04173082113265991,
+    "generation_time_s": 4992.955184221268,
+    "num_samples": 10000,
+    "tokenizer": "VAEc4",
+    "model": "diffusion"
+  },
+  "chestmnist_VQ1024_bayesian_flow": {
+    "fid": 5.976416110992432,
+    "is_mean": 2.4502320289611816,
+    "is_std": 0.03952428698539734,
+    "generation_time_s": 6453.695788860321,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_VQ1024_d3pm": {
+    "fid": 1.3017878532409668,
+    "is_mean": 2.88584303855896,
+    "is_std": 0.05762849748134613,
+    "generation_time_s": 6132.343622684479,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "d3pm"
+  },
+  "chestmnist_VQ1024_flow": {
+    "fid": 4.416961669921875,
+    "is_mean": 2.4534547328948975,
+    "is_std": 0.029846657067537308,
+    "generation_time_s": 750.2495586872101,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "flow"
+  },
+  "chestmnist_VQ1024_maskgit": {
+    "fid": 1.8621867895126343,
+    "is_mean": 2.309260129928589,
+    "is_std": 0.02518608793616295,
+    "generation_time_s": 145.34209561347961,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "maskgit"
+  },
+  "chestmnist_VQ1024_sedd": {
+    "fid": 1.3064775466918945,
+    "is_mean": 2.905400514602661,
+    "is_std": 0.06142409145832062,
+    "generation_time_s": 6112.557928323746,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "sedd"
+  },
+  "chestmnist_VQ1024_transformer": {
+    "fid": 0.5183159112930298,
+    "is_mean": 2.631718397140503,
+    "is_std": 0.03492793068289757,
+    "generation_time_s": 124.98559165000916,
+    "num_samples": 10000,
+    "tokenizer": "VQ1024",
+    "model": "transformer"
+  },
+  "chestmnist_VQ2048_bayesian_flow": {
+    "fid": 3.9388527870178223,
+    "is_mean": 2.5059940814971924,
+    "is_std": 0.03651426360011101,
+    "generation_time_s": 5839.185699939728,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_VQ2048_d3pm": {
+    "fid": 2.11914324760437,
+    "is_mean": 2.746358871459961,
+    "is_std": 0.053096953779459,
+    "generation_time_s": 5723.727076292038,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "d3pm"
+  },
+  "chestmnist_VQ2048_flow": {
+    "fid": 2.7499470710754395,
+    "is_mean": 2.5152783393859863,
+    "is_std": 0.03546353057026863,
+    "generation_time_s": 827.4380629062653,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "flow"
+  },
+  "chestmnist_VQ2048_maskgit": {
+    "fid": 3.331676483154297,
+    "is_mean": 2.3102757930755615,
+    "is_std": 0.029798291623592377,
+    "generation_time_s": 151.33807587623596,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "maskgit"
+  },
+  "chestmnist_VQ2048_sedd": {
+    "fid": 2.1331682205200195,
+    "is_mean": 2.77195143699646,
+    "is_std": 0.03446466475725174,
+    "generation_time_s": 6270.673732280731,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "sedd"
+  },
+  "chestmnist_VQ2048_transformer": {
+    "fid": 0.5230394005775452,
+    "is_mean": 2.690406560897827,
+    "is_std": 0.027354486286640167,
+    "generation_time_s": 160.551167011261,
+    "num_samples": 10000,
+    "tokenizer": "VQ2048",
+    "model": "transformer"
+  },
+  "chestmnist_VQ4096_bayesian_flow": {
+    "fid": 4.21628999710083,
+    "is_mean": 2.4065747261047363,
+    "is_std": 0.026531001552939415,
+    "generation_time_s": 8095.839962244034,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "bayesian_flow"
+  },
+  "chestmnist_VQ4096_d3pm": {
+    "fid": 3.6919686794281006,
+    "is_mean": 2.518803834915161,
+    "is_std": 0.024215279147028923,
+    "generation_time_s": 7305.617912769318,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "d3pm"
+  },
+  "chestmnist_VQ4096_flow": {
+    "fid": 3.3897600173950195,
+    "is_mean": 2.4029579162597656,
+    "is_std": 0.038086939603090286,
+    "generation_time_s": 729.4071364402771,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "flow"
+  },
+  "chestmnist_VQ4096_maskgit": {
+    "fid": 2.028083086013794,
+    "is_mean": 2.2862110137939453,
+    "is_std": 0.03217573091387749,
+    "generation_time_s": 89.44053745269775,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "maskgit"
+  },
+  "chestmnist_VQ4096_sedd": {
+    "fid": 3.5367178916931152,
+    "is_mean": 2.506514310836792,
+    "is_std": 0.03858700022101402,
+    "generation_time_s": 6108.118824005127,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "sedd"
+  },
+  "chestmnist_VQ4096_transformer": {
+    "fid": 0.30972424149513245,
+    "is_mean": 2.416696071624756,
+    "is_std": 0.04469125345349312,
+    "generation_time_s": 117.93607521057129,
+    "num_samples": 10000,
+    "tokenizer": "VQ4096",
+    "model": "transformer"
+  },
+  "chestmnist_VAEc16_continuous_flow": {
+    "fid": 0.1103295087814331,
+    "is_mean": 2.54950213432312,
+    "is_std": 0.025553595274686813,
+    "generation_time_s": 430.1138479709625,
+    "num_samples": 10000,
+    "tokenizer": "VAEc16",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAEc16_diffusion": {
+    "fid": 0.6552777290344238,
+    "is_mean": 2.3296310901641846,
+    "is_std": 0.022384505718946457,
+    "generation_time_s": 3479.7244131565094,
+    "num_samples": 10000,
+    "tokenizer": "VAEc16",
+    "model": "diffusion"
+  },
+  "chestmnist_VAEc8_continuous_flow": {
+    "fid": 0.3187290132045746,
+    "is_mean": 2.515235185623169,
+    "is_std": 0.041978735476732254,
+    "generation_time_s": 390.1110095977783,
+    "num_samples": 10000,
+    "tokenizer": "VAEc8",
+    "model": "continuous_flow"
+  },
+  "chestmnist_VAEc8_diffusion": {
+    "fid": 1.613240361213684,
+    "is_mean": 2.4008214473724365,
+    "is_std": 0.04070615768432617,
+    "generation_time_s": 3505.7912681102753,
+    "num_samples": 10000,
+    "tokenizer": "VAEc8",
+    "model": "diffusion"
+  }
+}

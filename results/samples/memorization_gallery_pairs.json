@@ -1,0 +1,110 @@
+{
+  "_description": "Closest generated-to-training pairs (InceptionV3-192 cosine distance, memorization_pairs) computed on the same samples that are saved, seed 42 reset per cell, 1000 samples per cell. raw_<i> in the npz holds cell i's generator output (tokens or latents).",
+  "cells": {
+    "chestmnist_AEdisc_continuous_flow": {
+      "pairs": [
+        {
+          "gen_idx": 231,
+          "train_idx": 60908,
+          "distance": -2.491474151611328e-05
+        },
+        {
+          "gen_idx": 961,
+          "train_idx": 59751,
+          "distance": -2.288818359375e-05
+        },
+        {
+          "gen_idx": 541,
+          "train_idx": 28430,
+          "distance": -2.2649765014648438e-05
+        }
+      ],
+      "memorization_ratio": 1.2729044834307992,
+      "auth_pct": 0.0820000022649765
+    },
+    "chestmnist_LFQ1024_transformer": {
+      "pairs": [
+        {
+          "gen_idx": 263,
+          "train_idx": 15190,
+          "distance": -2.1576881408691406e-05
+        },
+        {
+          "gen_idx": 420,
+          "train_idx": 41643,
+          "distance": -1.3947486877441406e-05
+        },
+        {
+          "gen_idx": 738,
+          "train_idx": 73279,
+          "distance": -1.7881393432617188e-06
+        }
+      ],
+      "memorization_ratio": 1.8138401559454191,
+      "auth_pct": 0.0560000017285347
+    },
+    "chestmnist_LFQ1024_d3pm": {
+      "pairs": [
+        {
+          "gen_idx": 451,
+          "train_idx": 28430,
+          "distance": 1.7881393432617188e-07
+        },
+        {
+          "gen_idx": 576,
+          "train_idx": 62067,
+          "distance": 1.7881393432617188e-06
+        },
+        {
+          "gen_idx": 506,
+          "train_idx": 26072,
+          "distance": 5.781650543212891e-06
+        }
+      ],
+      "memorization_ratio": 1.6832358674463939,
+      "auth_pct": 0.06300000101327896
+    },
+    "chestmnist_VQ1024_maskgit": {
+      "pairs": [
+        {
+          "gen_idx": 885,
+          "train_idx": 27003,
+          "distance": 2.9385089874267578e-05
+        },
+        {
+          "gen_idx": 705,
+          "train_idx": 66676,
+          "distance": 4.190206527709961e-05
+        },
+        {
+          "gen_idx": 974,
+          "train_idx": 55241,
+          "distance": 5.042552947998047e-05
+        }
+      ],
+      "memorization_ratio": 2.4678362573099415,
+      "auth_pct": 0.01600000075995922
+    },
+    "chestmnist_FSQ4096_bayesian_flow": {
+      "pairs": [
+        {
+          "gen_idx": 793,
+          "train_idx": 9849,
+          "distance": 0.00012302398681640625
+        },
+        {
+          "gen_idx": 798,
+          "train_idx": 57580,
+          "distance": 0.00013297796249389648
+        },
+        {
+          "gen_idx": 674,
+          "train_idx": 60316,
+          "distance": 0.0001335740089416504
+        }
+      ],
+      "memorization_ratio": 5.33625730994152,
+      "auth_pct": 0.008999999612569809
+    }
+  }
+}
