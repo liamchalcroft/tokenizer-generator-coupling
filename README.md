@@ -13,6 +13,8 @@ evaluation). This repository holds only what is specific to the paper: the Chest
 factorial and its supporting runs, the stored result files behind every reported number,
 and the figure scripts.
 
+Paper summary, figures and related software: [research page](https://liamchalcroft.com/publication/2026-tokenizer-generator-coupling/).
+
 ## Installation
 
 ```bash
